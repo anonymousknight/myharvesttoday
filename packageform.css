@@ -1,25 +1,26 @@
 
 
-.submit{
-	position: relative;
-	padding:10px 20px;
-	background:rgba(140, 198, 63, 0.78);
-	color:#fff !important;
-	font-size:16px;
-	font-weight:400;
-	font-family: 'Montserrat', sans-serif;
-	display:inline-block;
-	border-radius:3px;
-	text-transform:uppercase;
-	line-height:25px;
-	margin-bottom:20px;
-	top:80px;
-	left:-210px;
+.submit {
+    position: relative;
+    padding: 10px 20px;
+    background: rgba(140, 198, 63, 0.78);
+    color: #fff !important;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    display: inline-block;
+    border-radius: 3px;
+    text-transform: uppercase;
+    line-height: 25px;
+    margin-bottom: 20px;
+    top: 30px;
+    left: 93px;
 }
-.logo{
-	position:relative;
-	left:20px;
-	top:35px;
+.logo {
+    position: relative;
+    left: 480px;
+    top: 13px;
+    height: 310px;
 }
 .name{
 	font-family: 'Montserrat',sans-serif;
@@ -45,14 +46,14 @@
 	margin:0 0 22px 0 ;
 	color:black;
 }
-.dd1{
-	position: relative;
-	left: 25px;
-	height: 45px;
-	width: 180px;
-	padding-left: 5px;
-	font-size: 20px;
-	border-radius: 5px;
+.dd1 {
+    position: relative;
+    left: 4px;
+    height: 45px;
+    width: 321px;
+    padding-left: 5px;
+    font-size: 20px;
+    border-radius: 5px;
 }
 .email{
 	font-family: 'Montserrat',sans-serif;
@@ -70,8 +71,8 @@
 	font-size: 20px;
 	font-family: 'Montserrat',sans-serif;
 }
-#pack{
-	position: relative;
-	left:500px;
-	top:-360px;
+#pack {
+    position: relative;
+    left: 500px;
+    top: 12px;
 }
