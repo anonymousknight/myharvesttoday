@@ -21,7 +21,7 @@ def login():
 		msg = Message('Hello', sender = 'myharvestindia@gmail.com', recipients = ['a.jehoshua@gmail.com'])
 		msg.body = "NAME: {}, PHONE: {}, EMAIL: {}, PACKAGE: {}".format(name,phone,email,package)
 		mail.send(msg)
-	        return render_template("thank.html",name=name)
+	        return thanks
 		
 
 
