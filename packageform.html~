@@ -1,0 +1,21 @@
+<html>
+
+	<head>
+		 <title> </title>
+	</head>
+	<body>
+		<form action="" method="post">
+				<img src="logo1.png" class="logo">
+			<p><input type ="text" name="name" placeholder="Name" required id="name"></p>
+			<p><input type="text" name="phone" required placeholder="Mobile Number" id="phone"></p>
+			<p><input type ="text" name="email" required placeholder="Email id" id="email"></p>
+			<label id="label">Select the pack</label><select name="dd" id = "dd1">
+               			<option value = "green">Green Kit</option>
+               			<option value = "starter">Starter Kit</option>
+               			<option value = "family">Family Kit</option>
+             		</select>
+			<center><input type="submit" name="submit" id="submit"></center>
+		</form>	
+	</body>
+
+<html>

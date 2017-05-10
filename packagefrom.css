@@ -1,0 +1,28 @@
+
+
+.submit{
+	padding:15px 35px;
+	background:rgba(140, 198, 63, 0.78);
+	color:#fff !important;
+	font-size:16px;
+	font-weight:400;
+	font-family: 'Montserrat', sans-serif;
+	display:inline-block;
+	border-radius:3px;
+	text-transform:uppercase;
+	line-height:25px;
+	margin-bottom:10px;
+}
+.name{
+	height:10px;
+	width:18px;
+	font-family: 'Montserrat',sans-serif;
+	font-size:25px;
+	
+	color:#fff;
+}
+#pack{
+	position: relative;
+	left:500px;
+	top:-700px;
+}
