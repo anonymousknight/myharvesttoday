@@ -2,20 +2,21 @@
 
 	<head>
 		 <title> </title>
-		 <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/packageform.css') }}">
+		 <link rel="stylesheet" type="text/css" href="packageform.css">
 	</head>
 	<body>
 		<form action="http://127.0.0.1:5000/task2" method="post">
-				<img src="{{ url_for('static',filename='images/logo_1.png') }}" width="350px" height="500px" class="logo">
+				<img src="logo_1.png" width="350px" height="500px" class="logo">
 				<div id="pack">
 			<p><input type ="text" name="name" class="name" placeholder="Name" required ></p>
 			<p><input type="text" name="phone" required placeholder="Mobile Number" class="phone"></p>
 			<p><input type ="text" name="email" required placeholder="Email id" class="email"></p>
-			<label id="label">Select the pack</label><select name="package" class= "dd1">
+			<p><select name="package" class= "dd1" required>
+				<option selected hidden>Please Select the package</option>
                			<option value = "GreenKit">Green Kit</option>
                			<option value = "StarterKit">Starter Kit</option>
                			<option value = "FamilyKit">Family Kit</option>
-             		</select>
+             		</select></p>
              		<input type="submit"  class="submit" name="submit" id="submit">
              	</div>	
 			
