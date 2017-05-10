@@ -22,7 +22,6 @@
   width: 0;
   height: 0;
 }
-
 .clearfix:before,
 .clearfix:after {
   content: '\0020';
@@ -741,6 +740,30 @@ border: 2px solid #fff;
 	color: #fff;
 }
 
+img.unltd {
+    height: 66px;
+    width: 135px !important;
+    position: relative;
+    top: 0px;
+}
+img.auced1 {
+    position: relative;
+    top: 3px;
+    left: 3px;
+    height: 62px;
+    width: 98px;
+}
+img.restore {
+    height: 60px;
+    width: 128px;
+    top: 8px;
+}
+.asso {
+ position:relative;
+ top:23px;
+ color:black;
+ font-size:20px;
+}
 .validation {
     color: red;
     display:none;
