@@ -462,15 +462,35 @@ img {
 	-webkit-transition:all 0.3s ease-in-out;
 }
 
+
+#bizzbar{  
+	background:rgba(140, 198, 63, 0.78);
+	width:100%; 
+	text-align:center;
+	color:#fff;
+	padding:12px;
+	overflow:hidden;
+	height:50px;
+	z-index:1000;
+	font-family: 'Montserrat',sans-serif;
+	font-size:20px;
+	line-height:30px;
+	position:relative;
+	left:0; top:100%;
+	border-bottom:3px solid rgb(255,255,255);
+	box-shadow:0 1px 5px rgba(0,0,0,.7)
+}
+
+
+
 .quote-right:hover{
 color: #fff;
 border: 2px solid #fff;
 }
 
 .c-logo-part {
-    background: #8cc63f;
-    padding: 40px 0;
-    filter: alpha(opacity=60);
+    background: white;
+    padding: 20px 0px;
 }
 .c-logo-part ul{
 	padding:0;
