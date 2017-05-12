@@ -18,7 +18,7 @@ mail=Mail(app)
 def signup():
 	if request.method =='POST':
 		name,phone,username = request.form['name'],request.form['phone'],request.form['username']
-                msg = Message('Hello', sender = 'myharvestindia@gmail.com', recipients = ['a.jehoshua@gmail.com'])
+                msg = Message('Hello', sender = 'myharvestindia@gmail.com', recipients = ['archustalin@gmail.com'])
 		msg.body = "NAME: {}, PHONE: {}, EMAIL: {}".format(name,phone,username)
 		mail.send(msg)
 	return render_template("thank.html",name=name)
@@ -30,7 +30,7 @@ def signup():
 def pack():
 	if request.method =='POST':
 		name,phone,email,package = request.form['name'],request.form['phone'],request.form['email'],request.form['package']
-		msg = Message('Hello', sender = 'myharvestindia@gmail.com', recipients = ['a.jehoshua@gmail.com'])
+		msg = Message('Hello', sender = 'myharvestindia@gmail.com', recipients = ['archustalin@gmail.com'])
 		msg.body = "NAME: {}, PHONE: {}, EMAIL: {}, PACKAGE: {}".format(name,phone,email,package)
 		mail.send(msg)
 	        return render_template("thank.html",name=name)
