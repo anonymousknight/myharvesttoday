@@ -25,7 +25,7 @@ def signup():
         print('mailing!')
         name, phone, username = request.form['name'], request.form['phone'], request.form['username']
         msg = Message('Hello', sender='myharvestindia@gmail.com',
-                      recipients=['kandhan.kuhan@gmail.com'])
+                      recipients=['archustalin@gmail.com'])
         msg.body = "NAME: {}, PHONE: {}, EMAIL: {}".format(
             name, phone, username)
         @copy_current_request_context
@@ -46,7 +46,11 @@ def pack():
         msg.body = "NAME: {}, PHONE: {}, EMAIL: {}, PACKAGE: {}".format(
             name, phone, email, package)
         # archustalin
-        mail.send(msg)
+		@copy_current_request_context
+        def mail_sender(message):
+            mail.send(message)
+        t = threading.Thread(target=mail_sender, args=((msg,)))
+        t.start()
         return render_template("thank.html", name=name)
 
 
