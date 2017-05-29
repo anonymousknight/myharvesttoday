@@ -1,4 +1,4 @@
-from flask import Flask, redirect, url_for, request, render_template
+from flask import Flask, redirect, url_for, request, render_template, copy_current_request_context
 from flask_mail import Mail, Message
 import threading
 
@@ -14,12 +14,10 @@ app.config['MAIL_USE_SSL'] = True
 mail = Mail(app)
 
 
-def send_mail(msg):
-	mail.send(msg)
-
 @app.route('/')
 def hello_world():
-	return "myharvest_r&d"
+    return "myharvest_r&d"
+
 
 @app.route('/task1', methods=['POST'])
 def signup():
@@ -30,7 +28,10 @@ def signup():
                       recipients=['kandhan.kuhan@gmail.com'])
         msg.body = "NAME: {}, PHONE: {}, EMAIL: {}".format(
             name, phone, username)
-        t = threading.Thread(target=send_mail, args=((msg,)))
+        @copy_current_request_context
+        def mail_sender(message):
+            mail.send(message)
+        t = threading.Thread(target=mail_sender, args=((msg,)))
         t.start()
     return render_template("thank.html", name=name)
 
@@ -50,4 +51,4 @@ def pack():
 
 
 if __name__ == '__main__':
-    app.run(debug=True, host='0.0.0.0')
+    app.run(debug=True, host='0.0.0.0', threaded=True)
