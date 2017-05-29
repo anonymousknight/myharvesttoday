@@ -1,6 +1,6 @@
-
 from flask import Flask, redirect, url_for, request, render_template
 from flask_mail import Mail, Message
+import threading
 
 app = Flask(__name__)
 mail = Mail(app)
@@ -14,6 +14,13 @@ app.config['MAIL_USE_SSL'] = True
 mail = Mail(app)
 
 
+def send_mail(msg):
+	mail.send(msg)
+
+@app.route('/')
+def hello_world():
+	return "myharvest_r&d"
+
 @app.route('/task1', methods=['POST'])
 def signup():
     if request.method == 'POST':
@@ -23,7 +30,8 @@ def signup():
                       recipients=['kandhan.kuhan@gmail.com'])
         msg.body = "NAME: {}, PHONE: {}, EMAIL: {}".format(
             name, phone, username)
-        mail.send(msg)
+        t = threading.Thread(target=send_mail, args=((msg,)))
+        t.start()
     return render_template("thank.html", name=name)
 
 
