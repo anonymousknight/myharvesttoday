@@ -19,7 +19,7 @@ def signup():
     if request.method == 'POST':
         name, phone, username = request.form['name'], request.form['phone'], request.form['username']
         msg = Message('Hello', sender='myharvestindia@gmail.com',
-                      recipients=['archustalin@gmail.com'])
+                      recipients=['kandhan.kuhan@gmail.com'])
         msg.body = "NAME: {}, PHONE: {}, EMAIL: {}".format(
             name, phone, username)
         mail.send(msg)
