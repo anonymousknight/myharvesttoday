@@ -28,6 +28,7 @@ def signup():
                       recipients=['archustalin@gmail.com'])
         msg.body = "NAME: {}, PHONE: {}, EMAIL: {}".format(
             name, phone, username)
+
         @copy_current_request_context
         def mail_sender(message):
             mail.send(message)
@@ -45,8 +46,7 @@ def pack():
                       recipients=['archustalin@gmail.com'])
         msg.body = "NAME: {}, PHONE: {}, EMAIL: {}, PACKAGE: {}".format(
             name, phone, email, package)
-        # archustalin
-		@copy_current_request_context
+        @copy_current_request_context
         def mail_sender(message):
             mail.send(message)
         t = threading.Thread(target=mail_sender, args=((msg,)))
