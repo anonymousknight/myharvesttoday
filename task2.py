@@ -17,10 +17,11 @@ mail = Mail(app)
 @app.route('/task1', methods=['POST'])
 def signup():
     if request.method == 'POST':
-        name, phone, username = request.form['name'], request.form['phone'], request.form['username']
-        msg = Message('Hello', sender='myharvestindia@gmail.com',
+	print('mailing!')
+	name, phone, username = request.form['name'], request.form['phone'], request.form['username']
+	msg = Message('Hello', sender='myharvestindia@gmail.com',
                       recipients=['kandhan.kuhan@gmail.com'])
-        msg.body = "NAME: {}, PHONE: {}, EMAIL: {}".format(
+	msg.body = "NAME: {}, PHONE: {}, EMAIL: {}".format(
             name, phone, username)
         mail.send(msg)
     return render_template("thank.html", name=name)

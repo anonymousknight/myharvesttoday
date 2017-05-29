@@ -6,3 +6,17 @@
  * Restarting with stat
  * Debugger is active!
  * Debugger PIN: 218-817-324
+ * Detected change in '/opt/bitnami/apps/wordpress/htdocs/test/task2.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 218-817-324
+ * Detected change in '/opt/bitnami/apps/wordpress/htdocs/test/task2.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 218-817-324
+ * Detected change in '/opt/bitnami/apps/wordpress/htdocs/test/task2.py', reloading
+ * Restarting with stat
+  File "task2.py", line 21
+    name, phone, username = request.form['name'], request.form['phone'], request.form['username']
+                                                                                                ^
+TabError: inconsistent use of tabs and spaces in indentation
