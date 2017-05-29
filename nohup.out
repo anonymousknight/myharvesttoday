@@ -45,3 +45,4 @@ OSError: [Errno 98] Address already in use
 127.0.0.1 - - [29/May/2017 12:58:15] "GET / HTTP/1.1" 200 -
 127.0.0.1 - - [29/May/2017 12:58:19] "GET / HTTP/1.1" 200 -
 127.0.0.1 - - [29/May/2017 12:59:09] "GET /task1 HTTP/1.1" 405 -
+127.0.0.1 - - [29/May/2017 13:02:14] "POST /task1 HTTP/1.1" 200 -
