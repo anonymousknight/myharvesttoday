@@ -46,3 +46,31 @@ OSError: [Errno 98] Address already in use
 127.0.0.1 - - [29/May/2017 12:58:19] "GET / HTTP/1.1" 200 -
 127.0.0.1 - - [29/May/2017 12:59:09] "GET /task1 HTTP/1.1" 405 -
 127.0.0.1 - - [29/May/2017 13:02:14] "POST /task1 HTTP/1.1" 200 -
+ * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 218-817-324
+127.0.0.1 - - [29/May/2017 13:12:15] "POST /task1 HTTP/1.1" 200 -
+127.0.0.1 - - [29/May/2017 13:16:01] "POST /task1 HTTP/1.1" 200 -
+ * Detected change in '/opt/bitnami/apps/wordpress/htdocs/test/task2.py', reloading
+mailing!
+mailing!
+ * Restarting with stat
+  File "task2.py", line 49
+    @copy_current_request_context
+                                ^
+TabError: inconsistent use of tabs and spaces in indentation
+  File "task2.py", line 49
+    @copy_current_request_context
+                                ^
+TabError: inconsistent use of tabs and spaces in indentation
+ * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 218-817-324
+ * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 218-817-324
+127.0.0.1 - - [29/May/2017 14:59:29] "POST /task2 HTTP/1.1" 200 -
+127.0.0.1 - - [29/May/2017 15:00:43] "POST /task1 HTTP/1.1" 200 -
