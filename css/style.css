@@ -184,6 +184,11 @@ color: #fff;
 	position:relative;
 	background:#fff;
 }
+.buy {
+    position: relative;
+    bottom: 52px;
+    left: 118px;
+}
 .main-nav{
 	text-align:center;
 	margin:10px 0 0px;
