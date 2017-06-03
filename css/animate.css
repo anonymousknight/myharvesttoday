@@ -3309,9 +3309,9 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     -webkit-overflow-scrolling: touch;
 }
 body, html{
-     height: 100%;
-  background-repeat: no-repeat;
-  font-family: 'Oxygen', sans-serif;
+      height: 100%;
+      background-repeat: no-repeat;
+      font-family: 'Oxygen', sans-serif;
       background-size: cover;
 }
 

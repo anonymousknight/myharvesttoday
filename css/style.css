@@ -59,6 +59,7 @@ body {
 	font-weight:normal;
 	color:#888888;
 	margin:0;
+	
 }
 h2{
 	line-height:50px
@@ -183,6 +184,11 @@ color: #fff;
 	box-shadow:0 4px 5px -3px #ececec;
 	position:relative;
 	background:#fff;
+}
+.buy {
+    position: relative;
+    bottom: 52px;
+    left: 118px;
 }
 .main-nav{
 	text-align:center;
@@ -470,7 +476,7 @@ p.bizztext {
 
 #bizzbar{  
 	background:rgba(140, 198, 63, 0.78);
-	width:100%; 
+	width:100vw; 
 	text-align:center;
 	color:#fff;
 	padding:12px;
