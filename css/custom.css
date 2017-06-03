@@ -1,0 +1,24 @@
+.how-to-image > img{
+	height: 200px;
+	text-align: center;
+	margin: 0 auto;
+	display: block;
+}
+
+.featured-box-col2 {
+	padding-top: 40px;
+}
+
+.how-to-illus {
+	padding: 0 120px;
+}
+
+@media only screen and (max-width: 768px) {
+	.how-to-illus {
+		padding: 0px;
+	}
+}
+
+body {
+	overflow-x: hidden !important;
+}

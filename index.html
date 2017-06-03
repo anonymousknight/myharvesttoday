@@ -35,6 +35,7 @@
     <link href="css/font-awesome.css" rel="stylesheet" type="text/css">
     <link href="css/responsive.css" rel="stylesheet" type="text/css">
     <link href="css/animate.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
 
     <script type="text/javascript" src="js/jquery.1.8.3.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.js"></script>
@@ -72,7 +73,7 @@
 </head>
 
 <body>
-    <div id="myModalpopup" class="modal fade">
+    <!--div id="myModalpopup" class="modal fade">
         <div class="modal-dialog">
             <center>
                 <div class="modal-content">
@@ -89,7 +90,10 @@
                 </div>
             </center>
         </div>
-    </div>
+    </div-->
+    <!--
+        Poppup removed as of now. By, @sriprag.
+    -->
     <header class="header" id="header" style="padding-top:100px;padding-bottom: 100px;">
         <div class="container">
 
@@ -99,15 +103,15 @@
                         <a href="#"><img src="img/Logo112.png" alt=""></a>
                     </figure>
                     <div id="quote2">
-                        <h1 class="animated fadeInDown delay-07s">With <span style="color:#8cc63f;">myHarvest</span>, you can now become an Urban Farmer</h1>
+                        <h1 class="animated fadeInDown delay-07s">With <span style="color:#8cc63f;">myHarvest</span>, experience farming at home.</h1>
                     </div>
                     <div id="quote1">
-                        <h1 class="animated fadeInDown delay-07s">Now enjoy Fresh &amp; Healthy food that you can <br/>trust !</h1>
+                        <h1 class="animated fadeInDown delay-07s">Now enjoy Fresh &amp; Healthy food that you can trust !</h1>
                     </div>
                     <ul class="we-create animated fadeInUp delay-1s">
                         <li style="text-transform: none;">#BalconyTerraceGarden #ChemicalFree #Healthy #GreenHobby</li>
                     </ul>
-                    <a class="link animated fadeInUp delay-1s" href="#">Get Started</a>
+                    <a class="link animated fadeInUp delay-1s" href="#test">Know more !</a>
                 </div>
 
                 <div class="col-md-5" style="padding-top: 100px; padding-bottom: 100px;">
@@ -143,7 +147,7 @@
                                         </div>
                                     </div>
                                     <div class="form-group ">
-                                        <input type="submit" name="Register" id="button" class="btn btn-primary btn-lg btn-block login-button">
+                                        <input type="submit" name="Register" Value="Get Started!" id="button" class="btn btn-primary btn-lg btn-block login-button">
                                     </div>
                                 </form>
                             </div>
@@ -169,8 +173,6 @@
         </div>
     </nav>
 
-
-
     <section class="main-section" id="service">
         <div class="container">
             <h2>Grow Your Own ! Eat Healthy !</h2>
@@ -179,10 +181,13 @@
 
             <div class="row">
 
-                <div class="col-lg-7 col-sm-8 featured-work">
-                    <h2>Why myHarvest ?</h2>
+                <figure class="col-lg-12 col-sm-4 wow fadeInLeft">
+                    <center><img src="img/organic-food.png" alt=""></center>
+                </figure>
+                <div class="col-lg-12 col-sm-8 featured-work">
+                    <h2><center>Why myHarvest ?</center></h2>
                     <br/><br/>
-                    <div class="featured-box">
+                    <div class="featured-box col-lg-3">
                         <div class="featured-box-col1 wow fadeInRight delay-02s">
                             <i class="fa-heartbeat"></i>
                         </div>
@@ -191,7 +196,7 @@
                             <p>Include more freshly picked home grown greens and vegetables in your diet</p>
                         </div>
                     </div>
-                    <div class="featured-box">
+                    <div class="featured-box col-lg-3">
                         <div class="featured-box-col1 wow fadeInRight delay-04s">
                             <i class="fa-leaf"></i>
                         </div>
@@ -200,7 +205,7 @@
                             <p>Relax and feel de-stressed as you experience the joy of planting, watering or harvesting. </p>
                         </div>
                     </div>
-                    <div class="featured-box">
+                    <div class="featured-box col-lg-3">
                         <div class="featured-box-col1 wow fadeInRight delay-06s">
                             <i class="fa-pagelines"></i>
                         </div>
@@ -210,7 +215,7 @@
                                 footprint. </p>
                         </div>
                     </div>
-                    <div class="featured-box">
+                    <div class="featured-box col-lg-3">
                         <div class="featured-box-col1 wow fadeInRight delay-06s">
                             <i class="fa-home"></i>
                         </div>
@@ -221,18 +226,85 @@
                     </div>
                     <a class="Learn-More" href="#">Learn More</a>
                 </div>
-                <figure class="col-lg-5 col-sm-4 wow fadeInLeft">
-                    <img src="img/organic-food.png" alt="" style="padding-top: 100px;">
-                </figure>
+                
             </div>
         </div>
-    </section>=
+    </section>
 
-    <div id='bizzbar'>
+    <section id='bizzbar'>
         <p class='bizztext'>BOX SELLING.</p>
-    </div>
+        <!--button><a href="#">Click to open</a></button-->
+       <div> <button type="button" class="buy">BUY</button></div>
+    </section>
 
     <section class="main-section alabaster">
+        <div class="container">
+            <h2>How to get started ?</h2>
+            <p style="line-height: 30px; padding-bottom:10px;" class="padding-b">It’s all about your first step towards a happier and healthier living. You have the interest &amp; the space to grow but not sure of where to begin? Here is what we at “myHarvest” do !</p>
+            <div class="row how-to-illus">
+                <div class="col-sm-3 how-to-image">
+                    <img src="img/how-1.png">
+                </div>
+                <div class="col-sm-9 featured-work">
+                    <div class="featured-box">
+                        <div class="featured-box-col2 wow fadeInRight delay-02s">
+                            <h3>You choose a gardening package</h3>
+                            <div style="padding-top:10px;font-size:15px;">
+                                <p>We offer various kitchen gardening packages that enables your family to grow greens, vegetables, herbs and fruits. We also customize the garden as per your family needs.<a>View Packages</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row how-to-illus">
+                <div class="col-sm-9 featured-work">
+                    <div class="featured-box">
+                        <div class="featured-box-col2 wow fadeInRight delay-02s">
+                            <h3>We Setup the garden</h3>
+                            <div style="padding-top:10px;font-size:15px;">
+                                <p>On the scheduled date, our garden expert team brings all gardening materials including the soil, set up the kitchen garden and guides you to become an urban farmer.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 how-to-image">
+                    <img src="img/how-2.png">
+                </div>
+            </div>
+            <div class="row how-to-illus">
+                <div class="col-sm-3 how-to-image">
+                    <img src="img/how-3.png">
+                </div>
+                <div class="col-sm-9 featured-work">
+                    <div class="featured-box">
+                        <div class="featured-box-col2 wow fadeInRight delay-02s">
+                            <h3>YOU GROW and harvest</h3>
+                            <div style="padding-top:10px;font-size:15px;">
+                                <p>Every day you water the plants and observe them closely. Within a month, you can start harvesting and eating home grown food.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row how-to-illus">
+                <div class="col-sm-9 featured-work">
+                    <div class="featured-box">
+                        <div class="featured-box-col2 wow fadeInRight delay-02s">
+                            <h3>WE HELP YOU MAINTAIN</h3>
+                            <div style="padding-top:10px;font-size:15px;">
+                                <p>Planting a kitchen garden is a lot like raising children. Plants need your care &amp; minimal time. Having realized this, we are there to make sure your plants are healthy all the time.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 how-to-image">
+                    <img src="img/how-4.png">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--section class="main-section alabaster">
         <div class="container">
             <div class="row">
                 <figure class="col-lg-5 col-sm-4 wow fadeInLeft">
@@ -288,7 +360,11 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section-->
+    <!--
+        This section restructured to utilize the illustrations.
+        Author: @sriprag    
+    -->
 
     <section class="main-section paddind" id="Portfolio">
         <div class="container">
@@ -307,32 +383,32 @@
         </div>
         <div class="portfolioContainer wow fadeInUp delay-04s">
             <div class=" Portfolio-box houses">
-                <a href="#"><img src="img/banner1.jpg" alt=""></a>
+                <a href="#"><img src="img/urbankitchen.jpg" alt=""></a>
                 <h3>Urban Kitchen Garden Setup</h3>
                 <p>At your backyard, balcony or terrace.</p>
             </div>
             <div class="Portfolio-box houses corporates">
-                <a href="#"><img src="img/banner2.jpg" alt=""></a>
+                <a href="#"><img src="img/giftbox.jpg" alt=""></a>
                 <h3>myHarvest Giftbox</h3>
                 <p>A wonderful return gift to wish good health!</p>
             </div>
             <div class=" Portfolio-box houses schools colleges">
-                <a href="#"><img src="img/banner3.jpg" alt=""></a>
+                <a href="#"><img src="img/workshop.jpg" alt=""></a>
                 <h3>Organic Gardening Workshops</h3>
                 <p>Hands-on sessions for Organizations.</p>
             </div>
             <div class=" Portfolio-box corporates schools colleges">
-                <a href="#"><img src="img/banner4.jpg" alt=""></a>
+                <a href="#"><img src="img/growyourown.jpg" alt=""></a>
                 <h3>“Grow your own food” Program </h3>
                 <p>Creating edible gardens at your place!</p>
             </div>
             <div class=" Portfolio-box corporates schools colleges">
-                <a href="#"><img src="img/banner5.jpg" alt=""></a>
+                <a href="#"><img src="img/gogreen.jpg" alt=""></a>
                 <h3>'Go Green' Campaigns</h3>
                 <p>In association with forums, events &amp; retail outlets.</p>
             </div>
             <div class=" Portfolio-box schools colleges">
-                <a href="#"><img src="img/banner6.jpg" alt=""></a>
+                <a href="#"><img src="img/farmvisit.jpg" alt=""></a>
                 <h3>Farm Visits</h3>
                 <p>Enjoy a day away from the city!</p>
             </div>
@@ -342,7 +418,7 @@
     <section class="business-talking">
         <div class="container" style="padding-bottom:40px;">
             <h2>Want to view Our Previous Works ?</h2>
-            <a class="link animated fadeInUp delay-1s" href="#">View Our Happy &amp; Green Albums</a>
+            <a class="link animated fadeInUp delay-1s" href="https://facebook.com/myHarvest.in/photos" target="_blank">View Our Happy &amp; Green Albums</a>
         </div>
     </section>
 
@@ -548,14 +624,14 @@
                                 <li><a href="#" class="fa-google-plus"></a></li>
                             </ul>
                         </div>
-                        <h3 class="wow fadeInDown delay-03s">Archana P Stalin</h3>
+                        <h3 class="wow fadeInDown delay-03s">Archana Stalin</h3>
                         <span class="wow fadeInDown delay-03s">Founder &amp; Green Champion</span>
 
                     </div>
                     <div class="team-leader-box">
                         <div class="team-leader  wow fadeInDown delay-06s">
                             <div class="team-leader-shadow"><a href="#"></a></div>
-                            <img src="img/Logo112.png" alt="">
+                            <img src="img/somu.jpg" alt="">
                             <ul>
                                 <li><a href="#" class="fa-twitter"></a></li>
                                 <li><a href="#" class="fa-facebook"></a></li>
@@ -565,12 +641,12 @@
                         </div>
                         <h3 class="wow fadeInDown delay-06s">Somu K</h3>
                         <span class="wow fadeInDown delay-06s">Chief Garden Executive</span>
-
                     </div>
 
                 </div>
             </div>
     </section>
+
     <div class="c-logo-part">
         <div class="container">
             <div class="row">
@@ -642,6 +718,7 @@
             </section>
         </div>
     </section>
+
     <div class="container">
         <section class="main-section contact" id="contact">
 
@@ -705,13 +782,13 @@
             </div>
         </section>
     </div>
+
     <footer class="footer">
         <div class="container">
             <div class="footer-logo"><a href="#"><img src="img/footer-logo.png" alt=""></a></div>
             <span class="copyright">&copy; myHarvest 2017. All Rights Reserved</span>
         </div>
     </footer>
-
 
     <script type="text/javascript">
         $(document).ready(function (e) {
@@ -723,7 +800,6 @@
             });
 
         });
-
     </script>
 
     <script>
@@ -736,10 +812,9 @@
         wow.init();
     </script>
 
-
     <script type="text/javascript">
         $(window).load(function () {
-
+            // Script for top stitch nav
             $('.main-nav li a').bind('click', function (event) {
                 var $anchor = $(this);
 
@@ -749,7 +824,6 @@
                 event.preventDefault();
             });
         })
-
     </script>
 
     <script type="text/javascript">
@@ -795,7 +869,6 @@
             });
 
         });
-
     </script>
 
 </body>
