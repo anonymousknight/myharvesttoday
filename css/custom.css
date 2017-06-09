@@ -50,6 +50,30 @@ body {
 		font-size: small!important;
 	}
 	.bizztext{
-		font-size: 12px;
+		font-size: 11px;
 	}
+}
+
+.item{
+	padding: 10px 25px;
+}
+
+.asso{
+	margin-top: -10px;
+}
+
+.asso-img{
+	margin: 10px;
+}
+
+header .form-logo{
+	width:100px;
+	height:auto;
+	margin: 25px auto;
+    position: relative;
+    display: block;
+}
+
+.form .input-group{
+	padding: 15px;
 }

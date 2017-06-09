@@ -30,6 +30,10 @@
     <link href='https://fonts.googleapis.com/css?family=Passion+One' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
 
+    <!--For owlJs-->
+    <link rel="stylesheet" href="owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="owl/owl.theme.default.min.css">
+
 
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/style.css" rel="stylesheet" type="text/css">
@@ -189,10 +193,10 @@
                 <!--figure class="col-lg-12 col-sm-4 wow fadeInLeft">
                     <center><img src="img/organic-food.png" alt=""></center>
                 </figure-->
-                <div class="col-lg-12 col-sm-8 featured-work">
+                <div class="col-sm-12 featured-work">
                     <!--h2><center>Why myHarvest ?</center></h2-->
                     <br/><br/>
-                    <div class="featured-box col-lg-3">
+                    <div class="featured-box featured-outer col-sm-3">
                         <div class="featured-box-col1 wow fadeInRight delay-02s">
                             <i class="fa-heartbeat"></i>
                         </div>
@@ -201,7 +205,7 @@
                             <p>Include more freshly picked home grown greens and vegetables in your diet</p>
                         </div>
                     </div>
-                    <div class="featured-box col-lg-3">
+                    <div class="featured-box featured-outer col-sm-3">
                         <div class="featured-box-col1 wow fadeInRight delay-04s">
                             <i class="fa-leaf"></i>
                         </div>
@@ -210,7 +214,7 @@
                             <p>Relax and feel de-stressed as you experience the joy of planting, watering or harvesting. </p>
                         </div>
                     </div>
-                    <div class="featured-box col-lg-3">
+                    <div class="featured-box featured-outer col-sm-3">
                         <div class="featured-box-col1 wow fadeInRight delay-06s">
                             <i class="fa-pagelines"></i>
                         </div>
@@ -220,7 +224,7 @@
                                 footprint. </p>
                         </div>
                     </div>
-                    <div class="featured-box col-lg-3">
+                    <div class="featured-box featured-outer col-sm-3">
                         <div class="featured-box-col1 wow fadeInRight delay-06s">
                             <i class="fa-home"></i>
                         </div>
@@ -238,8 +242,8 @@
 
     <section id='bizzbar'>
        <div class="bizz-content">
-           <p class='bizztext'>Lorem ipsum sale is going on now. <!--span class="bizz-buy buy">Buy</span--></p> 
-           <button type="button" class="buy btn yellow-crusta">Click to Buy</button></div>
+           <p class='bizztext'>Grow & enjoy your organic food with myharvest boxes. <!--span class="bizz-buy buy">Buy</span--></p> 
+           <a href="https://www.instamojo.com/myharvest/myharvest-giftbox"><button type="button" class="buy btn yellow-crusta">Buy Now</button></a></div>
     </section>
 
     <section class="main-section alabaster" id="howtostart">
@@ -481,7 +485,7 @@
                         </ul>
                         <div class="pricing-footer">
                             <a href="packageform.html" class="btn yellow-crusta">
-                    Sign Up
+                    Buy
                     </a>
                         </div>
                     </div>
@@ -524,7 +528,7 @@
                         </ul>
                         <div class="pricing-footer">
                             <a href="packageform.html" class="btn yellow-crusta">
-                    Sign Up
+                    Buy
                     </a>
                         </div>
                     </div>
@@ -567,7 +571,7 @@
                         </ul>
                         <div class="pricing-footer">
                             <a href="packageform.html" class="btn yellow-crusta">
-                    Sign Up
+                    Buy
                     </a>
                         </div>
                     </div>
@@ -593,7 +597,7 @@
                         </ul>
                         <div class="pricing-footer">
                             <a href="javascript:;" class="btn yellow-crusta">
-                    Call Us
+                    Contact us
                     </a>
                         </div>
                     </div>
@@ -609,11 +613,13 @@
                         <div class="col-md-8 col-md-offset-2">
                             <div class="carousel slide" id="fade-quote-carousel" data-ride="carousel" data-interval="3000">
                                 <ol class="carousel-indicators">
-                                    <li data-target="#fade-quote-carousel" data-slide-to="0"></li>
-                                    <li data-target="#fade-quote-carousel" data-slide-to="1" class="active"></li>
+                                    <li data-target="#fade-quote-carousel" data-slide-to="0" class="active"></li>
+                                    <li data-target="#fade-quote-carousel" data-slide-to="1" ></li>
+                                    <li data-target="#fade-quote-carousel" data-slide-to="2" ></li>
+                                    <li data-target="#fade-quote-carousel" data-slide-to="3" ></li>
                                 </ol>
                                 <div class="carousel-inner">
-                                    <div class="item">
+                                    <div class="item active">
                                         <div class="row">
                                             <b class="quote-right wow fadeInDown delay-03"><i class="fa-quote-right"></i></b>
                                     
@@ -624,7 +630,7 @@
                                             </div>
                                             <ul class="client wow fadeIn delay-05s">
                                                 <li><a href="#">
-                                                <div class="profile-circle"><img src="img/jain.png" alt="" ></div>
+                                                <div class="profile-circle"><img src="img/jain.jpg" alt="" ></div>
                                                 <h3>Ms. Vijayakumari</h3>
                                                 <span>Principal of Jain Vidhayalaya, Madurai</span>
                                             </a></li>
@@ -632,7 +638,7 @@
                                         </div>
                                     </div>
                                    
-                                   <div class="item active">
+                                   <div class="item">
                                     <div class="row">
                                             <b class="quote-right wow fadeInDown delay-03"><i class="fa-quote-right"></i></b>
                                             
@@ -643,13 +649,52 @@
                                             </div>
                                             <ul class="client wow fadeIn delay-05s">
                                                 <li><a href="#">
-                                                <div class="profile-circle"> <img src="img/jain.png" alt="" ></div>
-                                                <h3>Ms. Vijayakumari</h3>
-                                                <span>Principal of Jain Vidhayalaya, Madurai</span>
+                                                <div class="profile-circle"> <img src="img/priya.jpg" alt="" ></div>
+                                                <h3> Priya Dharani</h3>
+                                                <span> A Parent of a 3 year old </span>
                                             </a></li>
                                             </ul>
                                         </div>
                                    </div>
+
+                                   <div class="item">
+                                    <div class="row">
+                                            <b class="quote-right wow fadeInDown delay-03"><i class="fa-quote-right"></i></b>
+                                            
+                                                <div class="col-sm-12 clients-text-container">
+                                                    <p class="client-part-haead wow fadeInDown delay-05">The students were excited to see their garden give them fresh vegetables and felt joyful taking the produce
+                                                        to their parents.</p>
+                                               
+                                            </div>
+                                            <ul class="client wow fadeIn delay-05s">
+                                                <li><a href="#">
+                                                <div class="profile-circle"> <img src="img/monisha.jpg" alt="" ></div>
+                                                <h3> Monisha</h3>
+                                                <span>  A Parent and Working Professional </span>
+                                            </a></li>
+                                            </ul>
+                                        </div>
+                                   </div>
+
+                                   <div class="item">
+                                    <div class="row">
+                                            <b class="quote-right wow fadeInDown delay-03"><i class="fa-quote-right"></i></b>
+                                            
+                                                <div class="col-sm-12 clients-text-container">
+                                                    <p class="client-part-haead wow fadeInDown delay-05">The students were excited to see their garden give them fresh vegetables and felt joyful taking the produce
+                                                        to their parents.</p>
+                                               
+                                            </div>
+                                            <ul class="client wow fadeIn delay-05s">
+                                                <li><a href="#">
+                                                <div class="profile-circle"> <img src="img/venkat.jpg" alt="" ></div>
+                                                <h3> Venkat Keshav</h3>
+                                                <span> Business Consultant </span>
+                                            </a></li>
+                                            </ul>
+                                        </div>
+                                   </div>
+
                                 </div>
                             </div>
                         </div>
@@ -683,13 +728,13 @@
                         <h2>In Association With</h2>
                     </div>
                     <div class="col-md-2">
-                        <li><a href="#"><img src="img/auced1.png" alt="" class="auced1"></a></li>
+                        <li><a href="#"><img src="img/auced1.png" alt="" class="auced1 asso-img"></a></li>
                     </div>
                     <div class="col-md-2">
-                        <li><a href="#"><img src="img/unltd.png" alt="" width="80px!important" class="unltd"></a></li>
+                        <li><a href="#"><img src="img/unltd.png" alt="" width="80px!important" class="unltd asso-img"></a></li>
                     </div>
                     <div class="col-md-2">
-                        <li><a href="#"><img src="img/restore1.png" alt="" class="restore"></a></li>
+                        <li><a href="#"><img src="img/restore1.png" alt="" class="restore asso-img"></a></li>
                     </div>
 
                 </ul>
@@ -701,7 +746,7 @@
         <div class="container">
             <h2>What Media Talks About Us.</h2>
 
-            <section id="carousel1">
+            <!--section id="carousel1">
                 <div class="container1">
                     <div class="row">
                         <div class="col-md-8 col-md-offset-2">
@@ -717,23 +762,62 @@
                                     <div class="item">
                                         <div><img src="img/ndtv.png" width="180px"></div>
                                         <blockquote>
-                                            <p>"Green start-ups cater to growing demand for home gardens"<br/><br/><strong><!-- DT Next<br/><br/> --><a href="http://www.dtnext.in/News/Citizen/2017/01/17111812/1025591/Green-startups-cater-to-growing-demand-for-home-gardens.vpf?TId=112144">Read More <i class="fa-caret-right"></i></a></strong></p>
+                                            <p>"Green start-ups cater to growing demand for home gardens"<br/><br/><strong><a href="http://www.dtnext.in/News/Citizen/2017/01/17111812/1025591/Green-startups-cater-to-growing-demand-for-home-gardens.vpf?TId=112144">Read More <i class="fa-caret-right"></i></a></strong></p>
                                         </blockquote>
                                     </div>
                                     <div class="item">
                                         <div><img src="img/dtnext.png" width="180px"></div>
                                         <blockquote>
-                                            <p>"Green start-ups cater to growing demand for home gardens"<br/><br/><strong><!-- DT Next<br/><br/> --><a href="http://www.dtnext.in/News/Citizen/2017/01/17111812/1025591/Green-startups-cater-to-growing-demand-for-home-gardens.vpf?TId=112144">Read More <i class="fa-caret-right"></i></a></strong></p>
+                                            <p>"Green start-ups cater to growing demand for home gardens"<br/><br/><strong><a href="http://www.dtnext.in/News/Citizen/2017/01/17111812/1025591/Green-startups-cater-to-growing-demand-for-home-gardens.vpf?TId=112144">Read More <i class="fa-caret-right"></i></a></strong></p>
                                         </blockquote>
                                     </div>
                                     <div class="active item">
                                         <div><img src="img/tie.png"></div>
                                         <blockquote>
-                                            <p>"Taking Farming To The Rooftops – Archana Stalin, CEO, myHarvest"<br/><br/><strong><!-- DT Next<br/><br/> --><a href="http://theindianenlightenment.com/2017/02/22/farming-on-the-rooftops-with-myharvest-archana-stalin/"></i></a></strong></p>
+                                            <p>"Taking Farming To The Rooftops – Archana Stalin, CEO, myHarvest"<br/><br/><strong><a href="http://theindianenlightenment.com/2017/02/22/farming-on-the-rooftops-with-myharvest-archana-stalin/"></i></a></strong></p>
                                         </blockquote>
                                     </div>
                                     <div class="item">
                                         <div><img src="img/deccan.png" style="background-color:white;"></div>
+                                        <blockquote>
+                                            <p>"Embraching the farming life"<br/><br/><strong><a href="http://www.dtnext.in/News/Citizen/2017/01/17111812/1025591/Green-startups-cater-to-growing-demand-for-home-gardens.vpf?TId=112144">Read More <i class="fa-caret-right"></i></a></strong></p>
+                                        </blockquote>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section-->
+
+            <section id="carousel1">
+                <div class="container1">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2">
+                            <div class="carousel slide">
+                             
+                                <div class="carousel-inner owl-carousel">
+
+                                    <div class="item">
+                                        <div style="width: 100px;margin: 0 auto;"><img src="img/ndtv.png"></div>
+                                        <blockquote>
+                                            <p>"Green start-ups cater to growing demand for home gardens"<br/><br/><strong><!-- DT Next<br/><br/> --><a href="http://www.dtnext.in/News/Citizen/2017/01/17111812/1025591/Green-startups-cater-to-growing-demand-for-home-gardens.vpf?TId=112144">Read More <i class="fa-caret-right"></i></a></strong></p>
+                                        </blockquote>
+                                    </div>
+                                    <div class="item">
+                                        <div style="width: 100px;margin: 0 auto;"><img src="img/dtnext.png" ></div>
+                                        <blockquote>
+                                            <p>"Green start-ups cater to growing demand for home gardens"<br/><br/><strong><!-- DT Next<br/><br/> --><a href="http://www.dtnext.in/News/Citizen/2017/01/17111812/1025591/Green-startups-cater-to-growing-demand-for-home-gardens.vpf?TId=112144">Read More <i class="fa-caret-right"></i></a></strong></p>
+                                        </blockquote>
+                                    </div>
+                                    <div class="item">
+                                        <div style="width: 100px;margin: 0 auto;"><img src="img/tie.png"></div>
+                                        <blockquote>
+                                            <p>"Taking Farming To The Rooftops – Archana Stalin, CEO, myHarvest"<br/><br/><strong><!-- DT Next<br/><br/> --><a href="http://theindianenlightenment.com/2017/02/22/farming-on-the-rooftops-with-myharvest-archana-stalin/"></i></a></strong></p>
+                                        </blockquote>
+                                    </div>
+                                    <div class="item">
+                                        <div style="width: 100px;margin: 0 auto;"><img src="img/deccan.png"></div>
                                         <blockquote>
                                             <p>"Embraching the farming life"<br/><br/><strong><!-- DT Next<br/><br/> --><a href="http://www.dtnext.in/News/Citizen/2017/01/17111812/1025591/Green-startups-cater-to-growing-demand-for-home-gardens.vpf?TId=112144">Read More <i class="fa-caret-right"></i></a></strong></p>
                                         </blockquote>
@@ -761,25 +845,30 @@
                             <div class="team-leader-shadow"><a href="#"></a></div>
                             <img src="img/archana.jpg" alt="">
                             <ul>
-                                <li><a href="#" class="fa-twitter"></a></li>
-                                <li><a href="#" class="fa-facebook"></a></li>
-                                <li><a href="#" class="fa-google-plus"></a></li>
+                                <li><a href=" https://twitter.com/swtarchu?lang=en" class="fa-twitter"></a></li>
+                                <li><a href=" https://facebook.com/archana.p.stalin/" class="fa-facebook"></a></li>
+                                <li><a href="https://www.instagram.com/archanastalin/" class="fa-google-plus"></a></li>
                             </ul>
                         </div>
                         <h3 class="wow fadeInDown delay-03s">Archana Stalin</h3>
-                        <span class="wow fadeInDown delay-03s">Founder &amp; Green Champion</span>
+                        <span class="wow fadeInDown delay-03s">Founder &amp; Green Champion
+                            <p>+91 82200 43502</p>
+                        </span>
 
                     </div>
                     <div class="team-leader-box">
                         <div class="team-leader  wow fadeInDown delay-06s">
                             <div class="team-leader-shadow"><a href="#"></a></div>
-                            <img src="img/somu.jpg" alt="">
+                            <img src="img/stalin.jpg" alt="">
                             <ul>
-                                <li><a href="#" class="fa-facebook"></a></li>
+                                <li><a href="https://www.facebook.com/stalin.kalidoss" class="fa-facebook"></a></li>
                             </ul>
                         </div>
-                        <h3 class="wow fadeInDown delay-06s">Somu K</h3>
-                        <span class="wow fadeInDown delay-06s">Chief Garden Executive</span>
+                        <h3 class="wow fadeInDown delay-06s">Stalin Kalidoss</h3>
+                        <span class="wow fadeInDown delay-06s">Chief Garden Executive
+                            <p> +91 82200 43501</p
+                        </span>
+
                     </div>
 
                 </div>
@@ -808,11 +897,11 @@
                         <span><strong>All days !!!</strong> 10am to 7pm<br></span>
                     </div>
                     <ul class="social-link">
-                        <li class="twitter"><a href="fb.com/myHarvest.in"><i class="fa-twitter"></i></a></li>
-                        <li class="facebook"><a href="#"><i class="fa-facebook"></i></a></li>
-                        <li class="pinterest"><a href="#"><i class="fa-pinterest"></i></a></li>
+                        <!--li class="twitter"><a href="fb.com/myHarvest.in"><i class="fa-twitter"></i></a></li-->
+                        <li class="facebook"><a href="https://fb.com/myHarvest.in/"><i class="fa-facebook"></i></a></li>
+                        <!--li class="pinterest"><a href="#"><i class="fa-pinterest"></i></a></li>
                         <li class="gplus"><a href="#"><i class="fa-google-plus"></i></a></li>
-                        <li class="dribbble"><a href="#"><i class="fa-dribbble"></i></a></li>
+                        <li class="dribbble"><a href="#"><i class="fa-dribbble"></i></a></li-->
                     </ul>
                 </div>
                 <div class="col-lg-6 col-sm-5 wow fadeInUp delay-05s">
@@ -934,6 +1023,17 @@
                 return false;
             });
 
+        });
+    </script>
+    <script src="owl/owl.carousel.min.js"></script>
+    <script>
+       var owl = $('.owl-carousel');
+        owl.owlCarousel({
+            items:2,
+            loop:true,
+            autoplay:true,
+            autoplayTimeout:2000,
+            autoplayHoverPause:false
         });
     </script>
 

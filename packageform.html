@@ -7,22 +7,57 @@
 	<title>myHarvest - Grow your own! Eat healthy!</title>
 	<link rel="icon" href="favicon.png" type="image/png">
 	<link rel="shortcut icon" href="favicon.ico" type="img/x-icon">
-	<link rel="stylesheet" type="text/css" href="packageform.css">
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+	<link href="css/responsive.css" rel="stylesheet" type="text/css">
+	<link href="css/custom.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-	<form action="/task2" method="post">
-		<img src="logo_1.png" width="350px" height="500px" class="logo">
-		<div id="pack">
-			<p><input type="text" name="name" class="name" placeholder="Name" required></p>
-			<p><input type="text" name="phone" required placeholder="Mobile Number" class="phone"></p>
-			<p><input type="text" name="email" required placeholder="Email id" class="email"></p>
-			<p><select name="package" class="dd1" required>
-				<option selected hidden>Please Select the package</option>
-               			<option value = "GreenKit">Green Kit</option>
-               			<option value = "StarterKit">Starter Kit</option>
-               			<option value = "FamilyKit">Family Kit</option>
-             		</select></p>
-			<input type="submit" class="submit" name="submit" id="submit" value="submit">
+	<header><img src="logo_1.png" class="form-logo"></header>
+	<form action="/task2" method="post" class="form container">
+		<div id="pack" class="col-xs-8 col-xs-offset-2">
+			<div class="form-group col-md-8 col-md-offset-3">
+                     <div class="row">
+						 <label for="inputName" class="col-sm-12 control-label">Name</label>
+                        <div class="input-group col-sm-12">
+                                <input id ="inputName" type="text" name="name" class="form-control" placeholder="Your Name" required>
+                            </div>
+						</div>
+					</div>
+
+					<div class="form-group col-md-8 col-md-offset-3">
+                     	<div class="row">
+							 <label for="inputMobile" class="col-sm-12 control-label">Mobile Number</label>
+							<div class="input-group col-sm-12">
+                                <input type="text" id="inputMobile" name="phone" required placeholder="Mobile Number" class="form-control">
+                            </div>
+                     	</div>
+					</div>
+
+					<div class="form-group col-md-8 col-md-offset-3">
+                     	<div class="row">	
+							 <label for="inputEmail" class="col-sm-12 control-label">Email</label>
+							<div class="input-group col-sm-12">
+                                <input type="text" id="inputEmail" name="email" required placeholder="Email id" class="form-control">
+                            </div>
+                     	</div>
+					</div>
+					
+					<div class="form-group col-md-8 col-md-offset-3">
+								<div class="row">
+									<div class="input-group col-sm-12">	
+									<select name="package" class="form-control" required>
+										<option selected hidden>Please Select the package</option>
+												<option value = "GreenKit">Green Kit</option>
+												<option value = "StarterKit">Starter Kit</option>
+												<option value = "FamilyKit">Family Kit</option>
+									</select>
+									</div>
+								</div>
+						</div>
+			
+					<div class="form-group col-md-8 col-md-offset-3">
+						<input type="submit" class="btn btn-md" name="submit" id="submit" value="submit" style="margin: 0 auto; background:#8CC640; color:#fff;font-size:16px;   position: relative;display: block;">
+					</div>
 		</div>
 
 	</form>
