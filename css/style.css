@@ -62,11 +62,11 @@ body {
 	
 }
 h2{
-	line-height:50px
+	line-height:50px;
 	font-size:34px;
 	color:#222222;
 	font-family: 'Nunito','Montserrat', sans-serif;
-	font-weight:700;
+	font-weight:900;
 	letter-spacing: -1px;
 	margin:0 0 15px 0;
 	text-align:center;
@@ -1024,6 +1024,7 @@ Pricing table
   font-size: 28px;
   font-style: normal;
   position: relative;
+  font-family: 'Nunito',sans-serif;
 }
 
 .pricing-head h4 span {
