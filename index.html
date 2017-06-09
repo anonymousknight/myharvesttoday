@@ -24,6 +24,7 @@
     <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,800italic,700italic,600italic,400italic,300italic,800,700,600'
         rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Passion+One' rel='stylesheet' type='text/css'>
@@ -120,11 +121,11 @@
                     <div>
                         <div class="row main">
                             <div class="main-login main-center">
-                                <h5 style="font-weight:700!important;">Interested to have a Kitchen Garden at Home?</h5><br/>
+                                <h5 style="font-weight:700!important;font-family: 'Nunito',Sans-seriff; font-size: 15px;">Interested to have a Kitchen Garden at Home?</h5><br/>
                                 <form class="" method="post" action="http://127.0.0.1:5000/task1">
 
                                     <div class="form-group">
-                                        <div class="cols-sm-10">
+                                        <div class="row">
                                             <div class="input-group">
                                                 <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
                                                 <input type="text" class="form-control" name="name" id="name" required placeholder="Your Name" />
@@ -133,7 +134,7 @@
                                     </div>
 
                                     <div class="form-group">
-                                        <div class="cols-sm-10">
+                                        <div class="row">
                                             <div class="input-group">
                                                 <span class="input-group-addon"><i class="fa fa-phone fa" aria-hidden="true"></i></span>
                                                 <input type="text" class="form-control" name="phone" id="email" required placeholder="Your Mobile Number" />
@@ -141,7 +142,7 @@
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <div class="cols-sm-10">
+                                        <div class="row">
                                             <div class="input-group">
                                                 <span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
                                                 <input type="text" class="form-control" name="username" id="username" required placeholder="Your Email" />
@@ -149,7 +150,9 @@
                                         </div>
                                     </div>
                                     <div class="form-group ">
-                                        <input type="submit" name="Register" Value="Get Started!" id="button" class="btn btn-primary btn-lg btn-block login-button">
+                                        <div class="row">
+                                         <input type="submit" name="Register" Value="Get Started!" id="button" class="btn btn-primary btn-lg btn-block login-button">
+                                        </div>
                                     </div>
                                 </form>
                             </div>
@@ -183,11 +186,11 @@
 
             <div class="row">
 
-                <figure class="col-lg-12 col-sm-4 wow fadeInLeft">
+                <!--figure class="col-lg-12 col-sm-4 wow fadeInLeft">
                     <center><img src="img/organic-food.png" alt=""></center>
-                </figure>
+                </figure-->
                 <div class="col-lg-12 col-sm-8 featured-work">
-                    <h2><center>Why myHarvest ?</center></h2>
+                    <!--h2><center>Why myHarvest ?</center></h2-->
                     <br/><br/>
                     <div class="featured-box col-lg-3">
                         <div class="featured-box-col1 wow fadeInRight delay-02s">
@@ -234,9 +237,9 @@
     </section>
 
     <section id='bizzbar'>
-        <p class='bizztext'>BOX SELLING.</p>
-        <!--button><a href="#">Click to open</a></button-->
-       <div> <button type="button" class="buy">BUY</button></div>
+       <div class="bizz-content">
+           <p class='bizztext'>Lorem ipsum sale is going on now. <!--span class="bizz-buy buy">Buy</span--></p> 
+           <button type="button" class="buy btn yellow-crusta">Click to Buy</button></div>
     </section>
 
     <section class="main-section alabaster" id="howtostart">
@@ -599,7 +602,62 @@
     </section>
 
     <section class="main-section client-part" id="client">
-        <div class="container">
+
+         <section id="carousel2">
+                <div class="container1">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2">
+                            <div class="carousel slide" id="fade-quote-carousel" data-ride="carousel" data-interval="3000">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#fade-quote-carousel" data-slide-to="0"></li>
+                                    <li data-target="#fade-quote-carousel" data-slide-to="1" class="active"></li>
+                                </ol>
+                                <div class="carousel-inner">
+                                    <div class="item">
+                                        <div class="row">
+                                            <b class="quote-right wow fadeInDown delay-03"><i class="fa-quote-right"></i></b>
+                                    
+                                                <div class="col-sm-12 clients-text-container">
+                                                    <p class="client-part-haead wow fadeInDown delay-05">The students were excited to see their garden give them fresh vegetables and felt joyful taking the produce
+                                                        to their parents.</p>
+                                            
+                                            </div>
+                                            <ul class="client wow fadeIn delay-05s">
+                                                <li><a href="#">
+                                                <div class="profile-circle"><img src="img/jain.png" alt="" ></div>
+                                                <h3>Ms. Vijayakumari</h3>
+                                                <span>Principal of Jain Vidhayalaya, Madurai</span>
+                                            </a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                   
+                                   <div class="item active">
+                                    <div class="row">
+                                            <b class="quote-right wow fadeInDown delay-03"><i class="fa-quote-right"></i></b>
+                                            
+                                                <div class="col-sm-12 clients-text-container">
+                                                    <p class="client-part-haead wow fadeInDown delay-05">The students were excited to see their garden give them fresh vegetables and felt joyful taking the produce
+                                                        to their parents.</p>
+                                               
+                                            </div>
+                                            <ul class="client wow fadeIn delay-05s">
+                                                <li><a href="#">
+                                                <div class="profile-circle"> <img src="img/jain.png" alt="" ></div>
+                                                <h3>Ms. Vijayakumari</h3>
+                                                <span>Principal of Jain Vidhayalaya, Madurai</span>
+                                            </a></li>
+                                            </ul>
+                                        </div>
+                                   </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        <!--div class="container">
             <b class="quote-right wow fadeInDown delay-03"><i class="fa-quote-right"></i></b>
             <div class="row">
                 <div class="col-lg-12">
@@ -614,7 +672,7 @@
                 <span>Principal of Jain Vidhayalaya, Madurai</span>
             </a></li>
             </ul>
-        </div>
+        </div-->
     </section>
 
     <div class="c-logo-part">
@@ -647,12 +705,12 @@
                 <div class="container1">
                     <div class="row">
                         <div class="col-md-8 col-md-offset-2">
-                            <div class="carousel slide" id="fade-quote-carousel" data-ride="carousel" data-interval="3000">
+                            <div class="carousel slide" id="fade-quote-carousel1" data-ride="carousel" data-interval="3000">
                                 <ol class="carousel-indicators">
-                                    <li data-target="#fade-quote-carousel" data-slide-to="0"></li>
-                                    <li data-target="#fade-quote-carousel" data-slide-to="1"></li>
-                                    <li data-target="#fade-quote-carousel" data-slide-to="2" class="active"></li>
-                                    <li data-target="#fade-quote-carousel" data-slide-to="3"></li>
+                                    <li data-target="#fade-quote-carousel1" data-slide-to="0"></li>
+                                    <li data-target="#fade-quote-carousel1" data-slide-to="1"></li>
+                                    <li data-target="#fade-quote-carousel1" data-slide-to="2" class="active"></li>
+                                    <li data-target="#fade-quote-carousel1" data-slide-to="3"></li>
                                 </ol>
                                 <div class="carousel-inner">
 
@@ -794,7 +852,6 @@
 
     <footer class="footer">
         <div class="container">
-            <div class="footer-logo"><a href="#"><img src="img/footer-logo.png" alt=""></a></div>
             <span class="copyright">&copy; myHarvest 2017. All Rights Reserved</span>
         </div>
     </footer>

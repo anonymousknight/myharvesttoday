@@ -6,7 +6,8 @@
 }
 
 .featured-box-col2 {
-	padding-top: 40px;
+	padding: 40px 10px;
+	display: inline-block;
 }
 
 .how-to-illus {
@@ -22,4 +23,30 @@
 body {
 	overflow-x: hidden !important;
 	margin: 0 auto;
+}
+
+.bizz-content{
+	margin: 0 auto;
+	position: relative;
+	display: block;
+}
+
+.bizz-buy{
+	color: rgba(118, 76, 41,0.78);
+	padding: 0px 3px;
+	text-decoration: underline;
+}
+
+.bizz-buy:hover, .bizz-buy:active{
+	text-decoration: none;
+}
+
+.clients-text-container{
+	display: block;
+}
+
+@media (max-width: 768px) {
+	.login-button{
+		font-size: small!important;
+	}
 }
