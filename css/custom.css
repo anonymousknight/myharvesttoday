@@ -99,18 +99,20 @@ header .form-logo{
 }
 
 .plants-item{
-	padding:25px 10px;
+	padding:35px 10px;
 	background-color: rgba(140, 198, 63, 0.78);
 	color:#fff;
 	font-size: 18px;
 	border-radius: 3px;
-	margin:5px;
+	margin:10px;
 }
 
 .plants-item p{
 	text-align: center;
 	display: block;
 	font-weight:800;
+	    font-size: x-large;
+    font-family: "Nunito",sans-serif;
 }
 
 .plants-item i{
@@ -146,4 +148,34 @@ header .form-logo{
 
 .close{
 	font-size: 30px;
+}
+
+.modal-content{
+	border-radius: 2px;
+}
+
+.nav-tabs {
+    /* border-bottom: 1px solid #dddddd; */
+    border: 0px;
+	
+	margin: 35px auto;
+    display: table;
+    position: relative;
+
+}
+
+.nav-tabs > li > a{
+	background-color:rgba(140, 198, 63, 0.9);
+	color:#ffffff;
+	border-radius: 2px;
+}
+
+.nav-tabs > li > a:hover{
+	background-color:rgba(140, 198, 63, 0.7);
+	color:#ffffff;
+}
+
+.pricing-tabs{
+	display: table;
+	font-family: "Nunito",sans-serif;
 }

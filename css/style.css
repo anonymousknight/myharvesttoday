@@ -86,7 +86,7 @@ h6{
 	font-family: 'Open Sans', sans-serif;
 	font-weight:400;
 	text-align:center;
-	margin:0 0 60px 0;
+	margin:0 0 20px 0;
 }
 p{
 	line-height:50px;
@@ -1007,15 +1007,18 @@ Pricing table
 .pricing-active {
   border: 3px solid rgba(140, 198, 63, 0.78);
   margin-top: -10px;
-  box-shadow: 7px 7px rgba(140, 198, 63, 0.2);
+  /*box-shadow: 7px 7px rgba(140, 198, 63, 0.2);*/
+  -webkit-box-shadow: 4px 4px 65px -23px rgba(0,0,0,0.75);
+  -moz-box-shadow: 4px 4px 65px -23px rgba(0,0,0,0.75);
+  box-shadow: 4px 4px 65px -23px rgba(0,0,0,0.75);
 }
 
 .pricing:hover {
-  border: 3px solid rgba(140, 198, 63, 0.7);
+  border: 3px solid rgba(140, 198, 63, 0.9);
 }
 
 .pricing:hover h4 {
-  color: rgba(140, 198, 63, 0.4);
+  color: rgba(140, 198, 63, 1);
 }
 
 .pricing-head {
@@ -1041,7 +1044,7 @@ Pricing table
   color: #fafafa;
   padding: 12px 0;
   font-size: 27px;
-  background: rgba(140, 198, 63, 0.78);
+  background: rgba(140, 198, 63, 0.9);
   border-bottom: solid 1px rgba(140, 198, 63, 0.9);
 }
 
@@ -1055,7 +1058,7 @@ Pricing table
 }
 
 .pricing-head-active h4 {
-  color: rgba(140, 198, 63, 0.78);
+  color: rgba(140, 198, 63,0.9);
 }
 
 .pricing-head h4 i {
@@ -1115,6 +1118,9 @@ Pricing table
 .yellow-crusta.btn {
   color: #FFFFFF;
   background-color: rgba(118, 76, 41,0.78);
+  font-size: 15px;
+  padding: 5px 15px;
+  font-weight: 600;
 }
 .yellow-crusta.btn:hover,
 .yellow-crusta.btn:focus,
