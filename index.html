@@ -24,10 +24,15 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,800italic,700italic,600italic,400italic,300italic,800,700,600'
         rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Passion+One' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
+
+    <!--For owlJs-->
+    <link rel="stylesheet" href="owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="owl/owl.theme.default.min.css">
 
 
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
@@ -120,11 +125,11 @@
                     <div>
                         <div class="row main">
                             <div class="main-login main-center">
-                                <h5 style="font-weight:700!important;">Interested to have a Kitchen Garden at Home?</h5><br/>
+                                <h5 style="font-weight:700!important;font-family: 'Nunito',Sans-seriff; font-size: 15px;">Interested to have a Kitchen Garden at Home?</h5><br/>
                                 <form class="" method="post" action="http://127.0.0.1:5000/task1">
 
                                     <div class="form-group">
-                                        <div class="cols-sm-10">
+                                        <div class="row">
                                             <div class="input-group">
                                                 <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
                                                 <input type="text" class="form-control" name="name" id="name" required placeholder="Your Name" />
@@ -133,7 +138,7 @@
                                     </div>
 
                                     <div class="form-group">
-                                        <div class="cols-sm-10">
+                                        <div class="row">
                                             <div class="input-group">
                                                 <span class="input-group-addon"><i class="fa fa-phone fa" aria-hidden="true"></i></span>
                                                 <input type="text" class="form-control" name="phone" id="email" required placeholder="Your Mobile Number" />
@@ -141,7 +146,7 @@
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <div class="cols-sm-10">
+                                        <div class="row">
                                             <div class="input-group">
                                                 <span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
                                                 <input type="text" class="form-control" name="username" id="username" required placeholder="Your Email" />
@@ -149,7 +154,9 @@
                                         </div>
                                     </div>
                                     <div class="form-group ">
-                                        <input type="submit" name="Register" Value="Get Started!" id="button" class="btn btn-primary btn-lg btn-block login-button">
+                                        <div class="row">
+                                         <input type="submit" name="Register" Value="Get Started!" id="button" class="btn btn-primary btn-lg btn-block login-button">
+                                        </div>
                                     </div>
                                 </form>
                             </div>
@@ -183,13 +190,13 @@
 
             <div class="row">
 
-                <figure class="col-lg-12 col-sm-4 wow fadeInLeft">
+                <!--figure class="col-lg-12 col-sm-4 wow fadeInLeft">
                     <center><img src="img/organic-food.png" alt=""></center>
-                </figure>
-                <div class="col-lg-12 col-sm-8 featured-work">
-                    <h2><center>Why myHarvest ?</center></h2>
+                </figure-->
+                <div class="col-sm-12 featured-work">
+                    <!--h2><center>Why myHarvest ?</center></h2-->
                     <br/><br/>
-                    <div class="featured-box col-lg-3">
+                    <div class="featured-box featured-outer col-sm-3">
                         <div class="featured-box-col1 wow fadeInRight delay-02s">
                             <i class="fa-heartbeat"></i>
                         </div>
@@ -198,7 +205,7 @@
                             <p>Include more freshly picked home grown greens and vegetables in your diet</p>
                         </div>
                     </div>
-                    <div class="featured-box col-lg-3">
+                    <div class="featured-box featured-outer col-sm-3">
                         <div class="featured-box-col1 wow fadeInRight delay-04s">
                             <i class="fa-leaf"></i>
                         </div>
@@ -207,7 +214,7 @@
                             <p>Relax and feel de-stressed as you experience the joy of planting, watering or harvesting. </p>
                         </div>
                     </div>
-                    <div class="featured-box col-lg-3">
+                    <div class="featured-box featured-outer col-sm-3">
                         <div class="featured-box-col1 wow fadeInRight delay-06s">
                             <i class="fa-pagelines"></i>
                         </div>
@@ -217,7 +224,7 @@
                                 footprint. </p>
                         </div>
                     </div>
-                    <div class="featured-box col-lg-3">
+                    <div class="featured-box featured-outer col-sm-3">
                         <div class="featured-box-col1 wow fadeInRight delay-06s">
                             <i class="fa-home"></i>
                         </div>
@@ -234,9 +241,9 @@
     </section>
 
     <section id='bizzbar'>
-        <p class='bizztext'>BOX SELLING.</p>
-        <!--button><a href="#">Click to open</a></button-->
-       <div> <button type="button" class="buy">BUY</button></div>
+       <div class="bizz-content">
+           <p class='bizztext'>Grow & enjoy your organic food with myharvest boxes. <!--span class="bizz-buy buy">Buy</span--></p> 
+           <a href="https://www.instamojo.com/myharvest/myharvest-giftbox"><button type="button" class="buy btn yellow-crusta">Buy Now</button></a></div>
     </section>
 
     <section class="main-section alabaster" id="howtostart">
@@ -429,6 +436,8 @@
         </div>
     </section>
 
+   
+
     <section class="business-talking">
         <div class="container" style="padding-bottom:40px;">
             <h2>Want to view Our Previous Works ?</h2>
@@ -436,162 +445,377 @@
         </div>
     </section>
 
-    <section id="pricing1">
+    
+     <section class="main-section">
+        <div class="container">
+            <h2>Plants We Offer</h2>
+            <section id="carousel2">
+                <div class="container2">
+                    <div class="row">
+                        <div class="container">
+                                <div class="col-sm-4">
+                                    <div class="plants-item" id="greens">
+                                        <i class="fa-pagelines"></i>
+                                        <p>Greens</p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4" >
+                                    <div class="plants-item"  id="veggies">
+                                        <i class="fa-pagelines"></i>
+                                        <p>Veggies</p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                      <div class="plants-item" id="herbals">
+                                        <i class="fa-pagelines"></i>
+                                        <p>Herbals</p>
+                                    </div>
+                                </div>
+                         </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
 
+
+    <div class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Modal title</h4>
+            </div>
+            <div class="modal-body">
+                <ul class="plants-list">
+                   <li></li>
+                </ul>
+            </div>
+            </div>
+        </div>
+    </div>
+
+
+    <section id="pricing1">
         <div class="container content1">
             <div class="row">
                 <br/>
-                <h2>Our new price list for Grow Bags</h2>
+                <h2>Our new price list</h2>
                 <h6>Take a closer look into our amazing team. We won’t bite.</h6>
-                <div class="col-md-3">
-                    <div class="pricing hover-effect">
-                        <div class="pricing-head">
-                            <h3>Green Kits <span>
-                    Just for starters!</span>
-                            </h3>
-                            <h4><i>Rs.</i>3000<i></i>
-                                <span>
-                    </span>
-                            </h4>
+            </div>
+            <div class="pricing-tabs">
+                <ul class="nav nav-tabs" role="tablist">
+                    <li role="presentation" class="active"><a href="#package1" aria-controls="home" role="tab" data-toggle="tab">Grow Bags</a></li>
+                    <li role="presentation"><a href="#package2" aria-controls="profile" role="tab" data-toggle="tab">Eco-friendly</a></li>
+                </ul>
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active fade in" id="package1">
+                        <div class="col-md-3">
+                            <div class="pricing hover-effect">
+                                <div class="pricing-head">
+                                    <h3>Green Kits <span>
+                            Just for starters!</span>
+                                    </h3>
+                                    <h4><i>Rs.</i>3000<i></i>
+                                        <span>
+                            </span>
+                                    </h4>
+                                </div>
+                                <ul class="pricing-content list-unstyled">
+                                    <center>
+                                        <li>
+                                            Choose 3 Varieties of Greens &amp; 2 Veggies.
+                                        </li>
+                                        <li>
+                                            80 Kgs of Potting Mix
+                                        </li>
+                                        <li>
+                                            Growth enhancers (natural fertilizers)
+                                        </li>
+                                        <li>
+                                            Natural pest repellents
+                                        </li>
+                                        <li>
+                                            Gardening tools (Water sprinkler, pesticide sprayer head, measuring cup)
+                                        </li>
+                                        <li>
+                                            Online support
+                                        </li>
+                                    </center>
+                                </ul>
+                                <div class="pricing-footer">
+                                    <a href="packageform.html" class="btn yellow-crusta">
+                            Buy
+                            </a>
+                                </div>
+                            </div>
                         </div>
-                        <ul class="pricing-content list-unstyled">
-                            <center>
-                                <li>
-                                    Choose 3 Varieties of Greens &amp; 2 Veggies.
-                                </li>
-                                <li>
-                                    80 Kgs of Potting Mix
-                                </li>
-                                <li>
-                                    Growth enhancers (natural fertilizers)
-                                </li>
-                                <li>
-                                    Natural pest repellents
-                                </li>
-                                <li>
-                                    Gardening tools (Water sprinkler, pesticide sprayer head, measuring cup)
-                                </li>
-                                <li>
-                                    Online support
-                                </li>
-                            </center>
-                        </ul>
-                        <div class="pricing-footer">
-                            <a href="packageform.html" class="btn yellow-crusta">
-                    Sign Up
-                    </a>
+                        <div class="col-md-3">
+                            <div class="pricing hover-effect">
+                                <div class="pricing-head">
+                                    <h3>Starter Kit<span>
+                            Get Your Interests Rolling!</span>
+                                    </h3>
+                                    <h4><i>Rs.</i>6000<i></i>
+                                        <span>
+                            </span>
+                                    </h4>
+                                </div>
+                                <ul class="pricing-content list-unstyled">
+                                    <center>
+                                        <li>
+                                            Choose 3 Greens Varieties &amp; 2 Veggies &amp; 2 herbals
+                                        </li>
+                                        <li>
+                                            160 Kgs of Potting Mix
+                                        </li>
+                                        <li>
+                                            Growth enhancers (natural fertilizers &amp; and bio fertilizers)
+                                        </li>
+                                        <li>
+                                            Natural pest repellents
+                                        </li>
+                                        <li>
+                                            Gardening tools (Water sprinkler, pesticide sprayer head, measuring cup)
+                                        </li>
+                                        <li>
+                                            Complimentary visit for garden health check
+                                        </li>
+                                        <li>
+                                            Online support
+                                        </li>
+                                    </center>
+                                </ul>
+                                <div class="pricing-footer">
+                                    <a href="packageform.html" class="btn yellow-crusta">
+                            Buy
+                            </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="pricing pricing-active hover-effect">
+                                <div class="pricing-head pricing-head-active">
+                                    <h3>Family Kit<span>
+                            The Best Pack Ever </span>
+                                    </h3>
+                                    <h4><i>Rs.</i>12000<i></i>
+                                        <span>
+                            </span>
+                                    </h4>
+                                </div>
+                                <ul class="pricing-content list-unstyled">
+                                    <center>
+                                        <li>
+                                            Choose 12 sets of plants (3 Greens, 6 Veggies Option &amp; 3 Herb)
+                                        </li>
+                                        <li>
+                                            340 Kgs of Potting Mix
+                                        </li>
+                                        <li>
+                                            Growth enhancers (natural fertilizers &amp; and bio fertilizers)
+                                        </li>
+                                        <li>
+                                            Natural pest repellents
+                                        </li>
+                                        <li>
+                                            Gardening tools (Water sprinkler, pesticide sprayer head, measuring cup)
+                                        </li>
+                                        <li>
+                                            2 Complimentary visit for garden health check
+                                        </li>
+                                        <li>
+                                            Online support
+                                        </li>
+                                    </center>
+                                </ul>
+                                <div class="pricing-footer">
+                                    <a href="packageform.html" class="btn yellow-crusta">
+                            Buy
+                            </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="pricing hover-effect">
+                                <div class="pricing-head">
+                                    <h3>Special Package<span>
+                            Made just for you!</span>
+                                    </h3>
+                                    <h4 style="font-size:34px;padding-top:10px;padding-bottom:10px;">Get Quote<i></i>
+                                        <span>
+                            </span>
+                                    </h4>
+                                </div>
+                                <ul class="pricing-content list-unstyled">
+                                    <center>
+                                        <li><br/> We also customize gardening packages based on your family needs and the available space.<br/>
+                                            <br/><br/> Also we provide personalized packages to turn your backyard into a beautiful
+                                            kitchen garden. <a href="#contact">Call us</a> for more details.<br/>
+                                        </li>
+                                    </center>
+                                </ul>
+                                <div class="pricing-footer">
+                                    <a href="javascript:;" class="btn yellow-crusta">
+                            Contact us
+                            </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="pricing hover-effect">
-                        <div class="pricing-head">
-                            <h3>Starter Kit<span>
-                    Get Your Interests Rolling!</span>
-                            </h3>
-                            <h4><i>Rs.</i>6000<i></i>
-                                <span>
-                    </span>
-                            </h4>
+
+                    <div role="tabpanel" class="tab-pane fade" id="package2">
+                        <div class="col-md-3">
+                            <div class="pricing hover-effect">
+                                <div class="pricing-head">
+                                    <h3>Green Kits <span>
+                            Just for starters!</span>
+                                    </h3>
+                                    <h4><i>Rs.</i>4000<i></i>
+                                        <span>
+                            </span>
+                                    </h4>
+                                </div>
+                                <ul class="pricing-content list-unstyled">
+                                    <center>
+                                        <li>
+                                            Choose 3 Varieties of Greens &amp; 2 Veggies
+                                        </li>
+                                        <li>
+                                            80 Kgs of Potting Mix
+                                        </li>
+                                        <li>
+                                            Growth enhancers (natural fertilizers)
+                                        </li>
+                                        <li>
+                                            Natural pest repellents
+                                        </li>
+                                        <li>
+                                            Gardening tools (Water sprinkler, pesticide sprayer head, measuring cup)
+                                        </li>
+                                        <li>
+                                            Online support
+                                        </li>
+                                    </center>
+                                </ul>
+                                <div class="pricing-footer">
+                                    <a href="packageform.html" class="btn yellow-crusta">
+                            Buy
+                            </a>
+                                </div>
+                            </div>
                         </div>
-                        <ul class="pricing-content list-unstyled">
-                            <center>
-                                <li>
-                                    Choose 3 Greens Varieties &amp; 2 Veggies &amp; 2 herbals
-                                </li>
-                                <li>
-                                    160 Kgs of Potting Mix
-                                </li>
-                                <li>
-                                    Growth enhancers (natural fertilizers &amp; and bio fertilizers)
-                                </li>
-                                <li>
-                                    Natural pest repellents
-                                </li>
-                                <li>
-                                    Gardening tools (Water sprinkler, pesticide sprayer head, measuring cup)
-                                </li>
-                                <li>
-                                    Complimentary visit for garden health check
-                                </li>
-                                <li>
-                                    Online support
-                                </li>
-                            </center>
-                        </ul>
-                        <div class="pricing-footer">
-                            <a href="packageform.html" class="btn yellow-crusta">
-                    Sign Up
-                    </a>
+                        <div class="col-md-3">
+                            <div class="pricing hover-effect">
+                                <div class="pricing-head">
+                                    <h3>Starter Kit<span>
+                            Get Your Interests Rolling!</span>
+                                    </h3>
+                                    <h4><i>Rs.</i>8000<i></i>
+                                        <span>
+                            </span>
+                                    </h4>
+                                </div>
+                                <ul class="pricing-content list-unstyled">
+                                    <center>
+                                        <li>
+                                            Choose 3 Greens Varieties &amp; 2 Veggies &amp; herbals
+                                        </li>
+                                        <li>
+                                            160 Kgs of Potting Mix
+                                        </li>
+                                        <li>
+                                            Growth enhancers (natural fertilizers &amp; and bio fertilizers)
+                                        </li>
+                                        <li>
+                                            Natural pest repellents
+                                        </li>
+                                        <li>
+                                            Gardening tools (Water sprinkler, pesticide sprayer head, measuring cup)
+                                        </li>
+                                        <li>
+                                            Complimentary visit for garden health check
+                                        </li>
+                                        <li>
+                                            Online support
+                                        </li>
+                                    </center>
+                                </ul>
+                                <div class="pricing-footer">
+                                    <a href="packageform.html" class="btn yellow-crusta">
+                            Buy
+                            </a>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="pricing pricing-active hover-effect">
-                        <div class="pricing-head pricing-head-active">
-                            <h3>Family Kit<span>
-                    The Best Pack Ever </span>
-                            </h3>
-                            <h4><i>Rs.</i>12000<i></i>
-                                <span>
-                    </span>
-                            </h4>
+                        <div class="col-md-3">
+                            <div class="pricing pricing-active hover-effect">
+                                <div class="pricing-head pricing-head-active">
+                                    <h3>Family Kit<span>
+                            The Best Pack Ever </span>
+                                    </h3>
+                                    <h4><i>Rs.</i>16000<i></i>
+                                        <span>
+                            </span>
+                                    </h4>
+                                </div>
+                                <ul class="pricing-content list-unstyled">
+                                    <center>
+                                        <li>
+                                            Choose 12 sets of plants (3 Greens, 6 Veggies &amp; 3 Herbals)
+                                        </li>
+                                        <li>
+                                            360 Kgs of Potting Mix
+                                        </li>
+                                        <li>
+                                            Growth enhancers (natural fertilizers &amp; and bio fertilizers)
+                                        </li>
+                                        <li>
+                                            Natural pest repellents
+                                        </li>
+                                        <li>
+                                            Gardening tools (Water sprinkler, pesticide sprayer head, measuring cup)
+                                        </li>
+                                        <li>
+                                            2 Complimentary visit for garden health check
+                                        </li>
+                                        <li>
+                                            Online support
+                                        </li>
+                                    </center>
+                                </ul>
+                                <div class="pricing-footer">
+                                    <a href="packageform.html" class="btn yellow-crusta">
+                            Buy
+                            </a>
+                                </div>
+                            </div>
                         </div>
-                        <ul class="pricing-content list-unstyled">
-                            <center>
-                                <li>
-                                    Choose 12 sets of plants (3 Greens, 6 Veggies Option &amp; 3 Herb)
-                                </li>
-                                <li>
-                                    340 Kgs of Potting Mix
-                                </li>
-                                <li>
-                                    Growth enhancers (natural fertilizers &amp; and bio fertilizers)
-                                </li>
-                                <li>
-                                    Natural pest repellents
-                                </li>
-                                <li>
-                                    Gardening tools (Water sprinkler, pesticide sprayer head, measuring cup)
-                                </li>
-                                <li>
-                                    2 Complimentary visit for garden health check
-                                </li>
-                                <li>
-                                    Online support
-                                </li>
-                            </center>
-                        </ul>
-                        <div class="pricing-footer">
-                            <a href="packageform.html" class="btn yellow-crusta">
-                    Sign Up
-                    </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="pricing hover-effect">
-                        <div class="pricing-head">
-                            <h3>Special Package<span>
-                    Made just for you!</span>
-                            </h3>
-                            <h4 style="font-size:34px;padding-top:10px;padding-bottom:10px;">Get Quote<i></i>
-                                <span>
-                    </span>
-                            </h4>
-                        </div>
-                        <ul class="pricing-content list-unstyled">
-                            <center>
-                                <li><br/> We also customize gardening packages based on your family needs and the available space.<br/>
-                                    <br/><br/> Also we provide personalized packages to turn your backyard into a beautiful
-                                    kitchen garden. <a href="#contact">Call us</a> for more details.<br/>
-                                </li>
-                            </center>
-                        </ul>
-                        <div class="pricing-footer">
-                            <a href="javascript:;" class="btn yellow-crusta">
-                    Call Us
-                    </a>
+                        <div class="col-md-3">
+                            <div class="pricing hover-effect">
+                                <div class="pricing-head">
+                                    <h3>Special Package<span>
+                            Made just for you!</span>
+                                    </h3>
+                                    <h4 style="font-size:34px;padding-top:10px;padding-bottom:10px;">Get Quote<i></i>
+                                        <span>
+                            </span>
+                                    </h4>
+                                </div>
+                                <ul class="pricing-content list-unstyled">
+                                    <center>
+                                        <li><br/> We also customize gardening packages based on your family needs and the available space.<br/>
+                                            <br/><br/> Also we provide personalized packages to turn your backyard into a beautiful
+                                            kitchen garden. <a href="#contact">Call us</a> for more details.<br/>
+                                        </li>
+                                    </center>
+                                </ul>
+                                <div class="pricing-footer">
+                                    <a href="javascript:;" class="btn yellow-crusta">
+                            Contact us
+                            </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -599,7 +823,103 @@
     </section>
 
     <section class="main-section client-part" id="client">
-        <div class="container">
+
+         <section id="carousel2">
+                <div class="container1">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2">
+                            <div class="carousel slide" id="fade-quote-carousel" data-ride="carousel" data-interval="3000">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#fade-quote-carousel" data-slide-to="0" class="active"></li>
+                                    <li data-target="#fade-quote-carousel" data-slide-to="1" ></li>
+                                    <li data-target="#fade-quote-carousel" data-slide-to="2" ></li>
+                                    <li data-target="#fade-quote-carousel" data-slide-to="3" ></li>
+                                </ol>
+                                <div class="carousel-inner">
+                                    <div class="item active">
+                                        <div class="row">
+                                            <b class="quote-right wow fadeInDown delay-03"><i class="fa-quote-right"></i></b>
+                                    
+                                                <div class="col-sm-12 clients-text-container">
+                                                    <p class="client-part-haead wow fadeInDown delay-05">The students were excited to see their garden give them fresh vegetables and felt joyful taking the produce
+                                                        to their parents.</p>
+                                            
+                                            </div>
+                                            <ul class="client wow fadeIn delay-05s">
+                                                <li><a href="#">
+                                                <div class="profile-circle"><img src="img/jain.jpg" alt="" ></div>
+                                                <h3>Ms. Vijayakumari</h3>
+                                                <span>Principal of Jain Vidhayalaya, Madurai</span>
+                                            </a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                   
+                                   <div class="item">
+                                    <div class="row">
+                                            <b class="quote-right wow fadeInDown delay-03"><i class="fa-quote-right"></i></b>
+                                            
+                                                <div class="col-sm-12 clients-text-container">
+                                                    <p class="client-part-haead wow fadeInDown delay-05">The students were excited to see their garden give them fresh vegetables and felt joyful taking the produce
+                                                        to their parents.</p>
+                                               
+                                            </div>
+                                            <ul class="client wow fadeIn delay-05s">
+                                                <li><a href="#">
+                                                <div class="profile-circle"> <img src="img/priya.jpg" alt="" ></div>
+                                                <h3> Priya Dharani</h3>
+                                                <span> A Parent of a 3 year old </span>
+                                            </a></li>
+                                            </ul>
+                                        </div>
+                                   </div>
+
+                                   <div class="item">
+                                    <div class="row">
+                                            <b class="quote-right wow fadeInDown delay-03"><i class="fa-quote-right"></i></b>
+                                            
+                                                <div class="col-sm-12 clients-text-container">
+                                                    <p class="client-part-haead wow fadeInDown delay-05">The students were excited to see their garden give them fresh vegetables and felt joyful taking the produce
+                                                        to their parents.</p>
+                                               
+                                            </div>
+                                            <ul class="client wow fadeIn delay-05s">
+                                                <li><a href="#">
+                                                <div class="profile-circle"> <img src="img/monisha.jpg" alt="" ></div>
+                                                <h3> Monisha</h3>
+                                                <span>  A Parent and Working Professional </span>
+                                            </a></li>
+                                            </ul>
+                                        </div>
+                                   </div>
+
+                                   <div class="item">
+                                    <div class="row">
+                                            <b class="quote-right wow fadeInDown delay-03"><i class="fa-quote-right"></i></b>
+                                            
+                                                <div class="col-sm-12 clients-text-container">
+                                                    <p class="client-part-haead wow fadeInDown delay-05">The students were excited to see their garden give them fresh vegetables and felt joyful taking the produce
+                                                        to their parents.</p>
+                                               
+                                            </div>
+                                            <ul class="client wow fadeIn delay-05s">
+                                                <li><a href="#">
+                                                <div class="profile-circle"> <img src="img/venkat.jpg" alt="" ></div>
+                                                <h3> Venkat Keshav</h3>
+                                                <span> Business Consultant </span>
+                                            </a></li>
+                                            </ul>
+                                        </div>
+                                   </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        <!--div class="container">
             <b class="quote-right wow fadeInDown delay-03"><i class="fa-quote-right"></i></b>
             <div class="row">
                 <div class="col-lg-12">
@@ -614,7 +934,7 @@
                 <span>Principal of Jain Vidhayalaya, Madurai</span>
             </a></li>
             </ul>
-        </div>
+        </div-->
     </section>
 
     <div class="c-logo-part">
@@ -625,13 +945,13 @@
                         <h2>In Association With</h2>
                     </div>
                     <div class="col-md-2">
-                        <li><a href="#"><img src="img/auced1.png" alt="" class="auced1"></a></li>
+                        <li><a href="#"><img src="img/auced1.png" alt="" class="auced1 asso-img"></a></li>
                     </div>
                     <div class="col-md-2">
-                        <li><a href="#"><img src="img/unltd.png" alt="" width="80px!important" class="unltd"></a></li>
+                        <li><a href="#"><img src="img/unltd.png" alt="" width="80px!important" class="unltd asso-img"></a></li>
                     </div>
                     <div class="col-md-2">
-                        <li><a href="#"><img src="img/restore1.png" alt="" class="restore"></a></li>
+                        <li><a href="#"><img src="img/restore1.png" alt="" class="restore asso-img"></a></li>
                     </div>
 
                 </ul>
@@ -643,39 +963,78 @@
         <div class="container">
             <h2>What Media Talks About Us.</h2>
 
-            <section id="carousel1">
+            <!--section id="carousel1">
                 <div class="container1">
                     <div class="row">
                         <div class="col-md-8 col-md-offset-2">
-                            <div class="carousel slide" id="fade-quote-carousel" data-ride="carousel" data-interval="3000">
+                            <div class="carousel slide" id="fade-quote-carousel1" data-ride="carousel" data-interval="3000">
                                 <ol class="carousel-indicators">
-                                    <li data-target="#fade-quote-carousel" data-slide-to="0"></li>
-                                    <li data-target="#fade-quote-carousel" data-slide-to="1"></li>
-                                    <li data-target="#fade-quote-carousel" data-slide-to="2" class="active"></li>
-                                    <li data-target="#fade-quote-carousel" data-slide-to="3"></li>
+                                    <li data-target="#fade-quote-carousel1" data-slide-to="0"></li>
+                                    <li data-target="#fade-quote-carousel1" data-slide-to="1"></li>
+                                    <li data-target="#fade-quote-carousel1" data-slide-to="2" class="active"></li>
+                                    <li data-target="#fade-quote-carousel1" data-slide-to="3"></li>
                                 </ol>
                                 <div class="carousel-inner">
 
                                     <div class="item">
                                         <div><img src="img/ndtv.png" width="180px"></div>
                                         <blockquote>
-                                            <p>"Green start-ups cater to growing demand for home gardens"<br/><br/><strong><!-- DT Next<br/><br/> --><a href="http://www.dtnext.in/News/Citizen/2017/01/17111812/1025591/Green-startups-cater-to-growing-demand-for-home-gardens.vpf?TId=112144">Read More <i class="fa-caret-right"></i></a></strong></p>
+                                            <p>"Green start-ups cater to growing demand for home gardens"<br/><br/><strong><a href="http://www.dtnext.in/News/Citizen/2017/01/17111812/1025591/Green-startups-cater-to-growing-demand-for-home-gardens.vpf?TId=112144">Read More <i class="fa-caret-right"></i></a></strong></p>
                                         </blockquote>
                                     </div>
                                     <div class="item">
                                         <div><img src="img/dtnext.png" width="180px"></div>
                                         <blockquote>
-                                            <p>"Green start-ups cater to growing demand for home gardens"<br/><br/><strong><!-- DT Next<br/><br/> --><a href="http://www.dtnext.in/News/Citizen/2017/01/17111812/1025591/Green-startups-cater-to-growing-demand-for-home-gardens.vpf?TId=112144">Read More <i class="fa-caret-right"></i></a></strong></p>
+                                            <p>"Green start-ups cater to growing demand for home gardens"<br/><br/><strong><a href="http://www.dtnext.in/News/Citizen/2017/01/17111812/1025591/Green-startups-cater-to-growing-demand-for-home-gardens.vpf?TId=112144">Read More <i class="fa-caret-right"></i></a></strong></p>
                                         </blockquote>
                                     </div>
                                     <div class="active item">
                                         <div><img src="img/tie.png"></div>
                                         <blockquote>
-                                            <p>"Taking Farming To The Rooftops – Archana Stalin, CEO, myHarvest"<br/><br/><strong><!-- DT Next<br/><br/> --><a href="http://theindianenlightenment.com/2017/02/22/farming-on-the-rooftops-with-myharvest-archana-stalin/"></i></a></strong></p>
+                                            <p>"Taking Farming To The Rooftops – Archana Stalin, CEO, myHarvest"<br/><br/><strong><a href="http://theindianenlightenment.com/2017/02/22/farming-on-the-rooftops-with-myharvest-archana-stalin/"></i></a></strong></p>
                                         </blockquote>
                                     </div>
                                     <div class="item">
                                         <div><img src="img/deccan.png" style="background-color:white;"></div>
+                                        <blockquote>
+                                            <p>"Embraching the farming life"<br/><br/><strong><a href="http://www.dtnext.in/News/Citizen/2017/01/17111812/1025591/Green-startups-cater-to-growing-demand-for-home-gardens.vpf?TId=112144">Read More <i class="fa-caret-right"></i></a></strong></p>
+                                        </blockquote>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section-->
+
+            <section id="carousel1">
+                <div class="container1">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2">
+                            <div class="carousel slide">
+                             
+                                <div class="carousel-inner owl-media owl-carousel">
+
+                                    <div class="item">
+                                        <div style="width: 100px;margin: 0 auto;"><img src="img/ndtv.png"></div>
+                                        <blockquote>
+                                            <p>"Green start-ups cater to growing demand for home gardens"<br/><br/><strong><!-- DT Next<br/><br/> --><a href="http://www.dtnext.in/News/Citizen/2017/01/17111812/1025591/Green-startups-cater-to-growing-demand-for-home-gardens.vpf?TId=112144">Read More <i class="fa-caret-right"></i></a></strong></p>
+                                        </blockquote>
+                                    </div>
+                                    <div class="item">
+                                        <div style="width: 100px;margin: 0 auto;"><img src="img/dtnext.png" ></div>
+                                        <blockquote>
+                                            <p>"Green start-ups cater to growing demand for home gardens"<br/><br/><strong><!-- DT Next<br/><br/> --><a href="http://www.dtnext.in/News/Citizen/2017/01/17111812/1025591/Green-startups-cater-to-growing-demand-for-home-gardens.vpf?TId=112144">Read More <i class="fa-caret-right"></i></a></strong></p>
+                                        </blockquote>
+                                    </div>
+                                    <div class="item">
+                                        <div style="width: 100px;margin: 0 auto;"><img src="img/tie.png"></div>
+                                        <blockquote>
+                                            <p>"Taking Farming To The Rooftops – Archana Stalin, CEO, myHarvest"<br/><br/><strong><!-- DT Next<br/><br/> --><a href="http://theindianenlightenment.com/2017/02/22/farming-on-the-rooftops-with-myharvest-archana-stalin/"></i></a></strong></p>
+                                        </blockquote>
+                                    </div>
+                                    <div class="item">
+                                        <div style="width: 100px;margin: 0 auto;"><img src="img/deccan.png"></div>
                                         <blockquote>
                                             <p>"Embraching the farming life"<br/><br/><strong><!-- DT Next<br/><br/> --><a href="http://www.dtnext.in/News/Citizen/2017/01/17111812/1025591/Green-startups-cater-to-growing-demand-for-home-gardens.vpf?TId=112144">Read More <i class="fa-caret-right"></i></a></strong></p>
                                         </blockquote>
@@ -703,25 +1062,30 @@
                             <div class="team-leader-shadow"><a href="#"></a></div>
                             <img src="img/archana.jpg" alt="">
                             <ul>
-                                <li><a href="#" class="fa-twitter"></a></li>
-                                <li><a href="#" class="fa-facebook"></a></li>
-                                <li><a href="#" class="fa-google-plus"></a></li>
+                                <li><a href=" https://twitter.com/swtarchu?lang=en" class="fa-twitter"></a></li>
+                                <li><a href=" https://facebook.com/archana.p.stalin/" class="fa-facebook"></a></li>
+                                <li><a href="https://www.instagram.com/archanastalin/" class="fa-google-plus"></a></li>
                             </ul>
                         </div>
                         <h3 class="wow fadeInDown delay-03s">Archana Stalin</h3>
-                        <span class="wow fadeInDown delay-03s">Founder &amp; Green Champion</span>
+                        <span class="wow fadeInDown delay-03s">Founder &amp; Green Champion
+                            <p>+91 82200 43502</p>
+                        </span>
 
                     </div>
                     <div class="team-leader-box">
                         <div class="team-leader  wow fadeInDown delay-06s">
                             <div class="team-leader-shadow"><a href="#"></a></div>
-                            <img src="img/somu.jpg" alt="">
+                            <img src="img/stalin.jpg" alt="">
                             <ul>
-                                <li><a href="#" class="fa-facebook"></a></li>
+                                <li><a href="https://www.facebook.com/stalin.kalidoss" class="fa-facebook"></a></li>
                             </ul>
                         </div>
-                        <h3 class="wow fadeInDown delay-06s">Somu K</h3>
-                        <span class="wow fadeInDown delay-06s">Chief Garden Executive</span>
+                        <h3 class="wow fadeInDown delay-06s">Stalin Kalidoss</h3>
+                        <span class="wow fadeInDown delay-06s">Chief Garden Executive
+                            <p> +91 82200 43501</p
+                        </span>
+
                     </div>
 
                 </div>
@@ -750,11 +1114,11 @@
                         <span><strong>All days !!!</strong> 10am to 7pm<br></span>
                     </div>
                     <ul class="social-link">
-                        <li class="twitter"><a href="#"><i class="fa-twitter"></i></a></li>
-                        <li class="facebook"><a href="#"><i class="fa-facebook"></i></a></li>
-                        <li class="pinterest"><a href="#"><i class="fa-pinterest"></i></a></li>
+                        <!--li class="twitter"><a href="fb.com/myHarvest.in"><i class="fa-twitter"></i></a></li-->
+                        <li class="facebook"><a href="https://fb.com/myHarvest.in/"><i class="fa-facebook"></i></a></li>
+                        <!--li class="pinterest"><a href="#"><i class="fa-pinterest"></i></a></li>
                         <li class="gplus"><a href="#"><i class="fa-google-plus"></i></a></li>
-                        <li class="dribbble"><a href="#"><i class="fa-dribbble"></i></a></li>
+                        <li class="dribbble"><a href="#"><i class="fa-dribbble"></i></a></li-->
                     </ul>
                 </div>
                 <div class="col-lg-6 col-sm-5 wow fadeInUp delay-05s">
@@ -794,7 +1158,6 @@
 
     <footer class="footer">
         <div class="container">
-            <div class="footer-logo"><a href="#"><img src="img/footer-logo.png" alt=""></a></div>
             <span class="copyright">&copy; myHarvest 2017. All Rights Reserved</span>
         </div>
     </footer>
@@ -877,6 +1240,57 @@
                 return false;
             });
 
+        });
+    </script>
+    <script src="owl/owl.carousel.min.js"></script>
+     <script src="js/jquery.owl-filter.js"></script>
+    <script>
+       var owlMedia = $('.owl-media');
+        owlMedia.owlCarousel({
+            items:2,
+            loop:true,
+            autoplay:true,
+            autoplayTimeout:2000,
+            autoplayHoverPause:false
+        });
+    </script>
+
+    <!--for modal-->
+    <script>
+        var greens=["Arakeerai","Srukeerai","Thandukeerai","Parupu keerai","Kasini Keerai","Manathakkali","Mulakeerai","Vendhaya Keerai","Spring Onion","Pulicha Keerai","Ponnanganni Keerai","Puthina(Mint)","Vallarai Keerai",];
+        var veggies=["Tomato","Brinjal","Ladies Finger","Radish","Beetroot","Chilli","Avarai","Cluster Beans","Karamani (thattam payiru)","Bittergourd","Snakegourd","Cucumber"];
+        var herbals=["Sirukunjaan","Thulasi","Nilavembu","Thippili","Yellow karisalankanni","Karpuravalli","Adathoda","Thuthuvalai","Mudakarthan","Insulin","Nithyakalyani"];
+        function loadPlantsList(data){
+            console.log(data);
+            $('.modal-title').text(data);
+            var current=[];
+            
+            if(data=="Greens"){
+                current=greens;
+            }else if(data=="Veggies"){
+                current=veggies;
+            }else if(data=="Herbals"){
+                current=herbals;
+            }
+            
+            $(".plants-list").empty();
+
+            $.each(current,function(index){
+                $(".plants-list").append("<li>"+current[index]+"</li>");
+            });
+            $(".modal").modal('show');
+        }
+
+        $('#greens').click(function(){
+            loadPlantsList("Greens");
+        });
+
+        $('#veggies').click(function(){
+            loadPlantsList("Veggies");
+        });
+        
+        $('#herbals').click(function(){
+            loadPlantsList("Herbals");
         });
     </script>
 
