@@ -436,12 +436,65 @@
         </div>
     </section>
 
+   
+
     <section class="business-talking">
         <div class="container" style="padding-bottom:40px;">
             <h2>Want to view Our Previous Works ?</h2>
             <a class="link animated fadeInUp delay-1s" href="https://www.facebook.com/media/set/?set=a.1391603907562879.1073741829.288027367920544&type=1&l=465ced25ca" target="_blank">View Our Happy &amp; Green Albums</a>
         </div>
     </section>
+
+    
+     <section class="main-section">
+        <div class="container">
+            <h2>Plants We Offer</h2>
+            <section id="carousel2">
+                <div class="container2">
+                    <div class="row">
+                        <div class="container">
+                                <div class="col-md-4">
+                                    <div class="plants-item" id="greens">
+                                        <i class="fa-pagelines"></i>
+                                        <p>Greens</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4" >
+                                    <div class="plants-item"  id="veggies">
+                                        <i class="fa-pagelines"></i>
+                                        <p>Veggies</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                      <div class="plants-item" id="herbals">
+                                        <i class="fa-pagelines"></i>
+                                        <p>Herbals</p>
+                                    </div>
+                                </div>
+                         </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+
+
+    <div class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Modal title</h4>
+            </div>
+            <div class="modal-body">
+                <ul class="plants-list">
+                   <li></li>
+                </ul>
+            </div>
+            </div>
+        </div>
+    </div>
+
 
     <section id="pricing1">
 
@@ -796,7 +849,7 @@
                         <div class="col-md-8 col-md-offset-2">
                             <div class="carousel slide">
                              
-                                <div class="carousel-inner owl-carousel">
+                                <div class="carousel-inner owl-media owl-carousel">
 
                                     <div class="item">
                                         <div style="width: 100px;margin: 0 auto;"><img src="img/ndtv.png"></div>
@@ -1026,14 +1079,54 @@
         });
     </script>
     <script src="owl/owl.carousel.min.js"></script>
+     <script src="js/jquery.owl-filter.js"></script>
     <script>
-       var owl = $('.owl-carousel');
-        owl.owlCarousel({
+       var owlMedia = $('.owl-media');
+        owlMedia.owlCarousel({
             items:2,
             loop:true,
             autoplay:true,
             autoplayTimeout:2000,
             autoplayHoverPause:false
+        });
+    </script>
+
+    <!--for modal-->
+    <script>
+        var greens=["Arakeerai","Srukeerai","Thandukeerai","Parupu keerai","Kasini Keerai","Manathakkali","Mulakeerai","Vendhaya Keerai","Spring Onion","Pulicha Keerai","Ponnanganni Keerai","Puthina(Mint)","Vallarai Keerai",];
+        var veggies=["Tomato","Brinjal","Ladies Finger","Radish","Beetroot","Chilli","Avarai","Cluster Beans","Karamani (thattam payiru)","Bittergourd","Snakegourd","Cucumber"];
+        var herbals=["Sirukunjaan","Thulasi","Nilavembu","Thippili","Yellow karisalankanni","Karpuravalli","Adathoda","Thuthuvalai","Mudakarthan","Insulin","Nithyakalyani"];
+        function loadPlantsList(data){
+            console.log(data);
+            $('.modal-title').text(data);
+            var current=[];
+            
+            if(data=="Greens"){
+                current=greens;
+            }else if(data=="Veggies"){
+                current=veggies;
+            }else if(data=="Herbals"){
+                current=herbals;
+            }
+            
+            $(".plants-list").empty();
+
+            $.each(current,function(index){
+                $(".plants-list").append("<li>"+current[index]+"</li>");
+            });
+            $(".modal").modal('show');
+        }
+
+        $('#greens').click(function(){
+            loadPlantsList("Greens");
+        });
+
+        $('#veggies').click(function(){
+            loadPlantsList("Veggies");
+        });
+        
+        $('#herbals').click(function(){
+            loadPlantsList("Herbals");
         });
     </script>
 
