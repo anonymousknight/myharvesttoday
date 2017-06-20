@@ -16,48 +16,75 @@
 	<form action="/task2" method="post" class="form container">
 		<div id="pack" class="col-xs-8 col-xs-offset-2">
 			<div class="form-group col-md-8 col-md-offset-3">
-                     <div class="row">
-						 <label for="inputName" class="col-sm-12 control-label">Name</label>
-                        <div class="input-group col-sm-12">
-                                <input id ="inputName" type="text" name="name" class="form-control" placeholder="Your Name" required>
-                            </div>
-						</div>
-					</div>
+                <div class="row">
+					<label for="inputName" class="col-sm-12 control-label">Name</label>
+                    <div class="input-group col-sm-12">
+                        <input id ="inputName" type="text" name="name" class="form-control" placeholder="Your Name" required>
+                    </div>
+				</div>
+			</div>
 
-					<div class="form-group col-md-8 col-md-offset-3">
-                     	<div class="row">
-							 <label for="inputMobile" class="col-sm-12 control-label">Mobile Number</label>
-							<div class="input-group col-sm-12">
-                                <input type="text" id="inputMobile" name="phone" required placeholder="Mobile Number" class="form-control">
-                            </div>
-                     	</div>
-					</div>
+			<div class="form-group col-md-8 col-md-offset-3">
+                <div class="row">
+					<label for="inputMobile" class="col-sm-12 control-label">Contact Number</label>
+					<div class="input-group col-sm-12">
+                        <input type="text" id="inputMobile" name="phone" required placeholder="Mobile Number" class="form-control">
+                    </div>
+                </div>
+			</div>
 
-					<div class="form-group col-md-8 col-md-offset-3">
-                     	<div class="row">	
-							 <label for="inputEmail" class="col-sm-12 control-label">Email</label>
-							<div class="input-group col-sm-12">
-                                <input type="text" id="inputEmail" name="email" required placeholder="Email id" class="form-control">
-                            </div>
-                     	</div>
-					</div>
+			<div class="form-group col-md-8 col-md-offset-3">
+                <div class="row">
+					<label for="inputEmail" class="col-sm-12 control-label">Email</label>
+					<div class="input-group col-sm-12">
+                        <input type="text" id="inputEmail" name="email" required placeholder="Email id" class="form-control">
+                    </div>
+                </div>
+			</div>
+
+			<div class="form-group col-md-8 col-md-offset-3">
+                <div class="row">
+					<label for="inputAddress" class="col-sm-12 control-label">Address</label>
+					<div class="input-group col-sm-12">
+                        <input type="text" id="inputEmail" name="address" required placeholder="Address: House no., Street name, Area, City, State, Pin code" class="form-control">
+                    </div>
+                </div>
+			</div>
 					
-					<div class="form-group col-md-8 col-md-offset-3">
-								<div class="row">
-									<div class="input-group col-sm-12">	
-									<select name="package" class="form-control" required>
-										<option selected hidden>Please Select the package</option>
-												<option value = "GreenKit">Green Kit</option>
-												<option value = "StarterKit">Starter Kit</option>
-												<option value = "FamilyKit">Family Kit</option>
-									</select>
-									</div>
-								</div>
-						</div>
-			
-					<div class="form-group col-md-8 col-md-offset-3">
-						<input type="submit" class="btn btn-md" name="submit" id="submit" value="submit" style="margin: 0 auto; background:#8CC640; color:#fff;font-size:16px;   position: relative;display: block;">
+			<div class="form-group col-md-8 col-md-offset-3">
+				<div class="row">
+					<label for="inputKitType" class="col-sm-12 control-label">Package</label>
+					<div class="input-group col-sm-12">
+						<select name="package" class="form-control" required>
+							<option selected hidden>Please Select the package</option>
+							<option value = "StarterKit-3000">Starter Kit - Rs. 3000</option>
+							<option value = "StarterKit-4000">Starter Kit - Rs. 4000(Reusable organic Baskets)</option>
+							<option value = "BasicKit-6000">Basic Kit - Rs. 6000</option>
+							<option value = "BasicKit-8000">Basic Kit - Rs. 8000(Reusable organic Baskets)</option>
+							<option value = "FamilyKit-12000">Family Kit - Rs. 12000</option>
+							<option value = "FamilyKit-16000">Family Kit - Rs. 16000(Reusable organic Baskets)</option>
+							<option value = "SpecialPackage">Special Package (Customized for you!)</option>
+						</select>
 					</div>
+				</div>
+			</div>
+
+			<div class="form-group col-md-8 col-md-offset-3">
+				<div class="row">
+					<label for="inputPromoteLetter" class="col-sm-12 control-label">Do you want to receive promotional letters from us?</label>
+					<div class="input-group col-sm-12">
+						<select name="promotion" class="form-control" required>
+							<option selected hidden>Please Select an option</option>
+							<option value = "Promotion-Yes">Yes</option>
+							<option value = "Promotino-No">No</option>
+						</select>
+					</div>
+				</div>
+			</div>
+			
+			<div class="form-group col-md-8 col-md-offset-3">
+				<input type="submit" class="btn btn-md" name="submit" id="submit" value="submit" style="margin: 0 auto; background:#8CC640; color:#fff;font-size:16px;   position: relative;display: block;">
+			</div>
 		</div>
 
 	</form>

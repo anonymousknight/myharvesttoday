@@ -40,12 +40,13 @@ def signup():
 @app.route('/task2', methods=['POST'])
 def pack():
     if request.method == 'POST':
-        name, phone, email, package = request.form['name'], request.form[
-            'phone'], request.form['email'], request.form['package']
+        name, phone, email, address, package, promotion = request.form['name'], request.form[
+            'phone'], request.form['email'], request.form['address'], request.form['package'],
+            request.form['promotion']
         msg = Message('Hello', sender='myharvestindia@gmail.com',
                       recipients=['archustalin@gmail.com'])
-        msg.body = "NAME: {}, PHONE: {}, EMAIL: {}, PACKAGE: {}".format(
-            name, phone, email, package)
+        msg.body = "NAME: {}, PHONE: {}, EMAIL: {}, ADDRESS: {}, PACKAGE: {}, PROMOTION: {}".format(
+            name, phone, email, address, package, promotion)
         @copy_current_request_context
         def mail_sender(message):
             mail.send(message)
