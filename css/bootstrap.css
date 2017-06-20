@@ -3475,7 +3475,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .nav-tabs > li.active > a:focus {
   color: #555555;
   background-color: #ffffff;
-  border: 0px solid #dddddd;
+  border: 2px solid #dddddd;
   border-bottom-color: transparent;
   cursor: default;
 }
