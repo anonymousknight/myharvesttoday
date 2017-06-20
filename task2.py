@@ -41,8 +41,7 @@ def signup():
 def pack():
     if request.method == 'POST':
         name, phone, email, address, package, promotion = request.form['name'], request.form[
-            'phone'], request.form['email'], request.form['address'], request.form['package'],
-            request.form['promotion']
+            'phone'], request.form['email'], request.form['address'], request.form['package'],request.form['promotion']
         msg = Message('Hello', sender='myharvestindia@gmail.com',
                       recipients=['archustalin@gmail.com'])
         msg.body = "NAME: {}, PHONE: {}, EMAIL: {}, ADDRESS: {}, PACKAGE: {}, PROMOTION: {}".format(
